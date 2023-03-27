@@ -1,0 +1,246 @@
+// CONTACTFORM FILE
+
+@media (min-width: 200px){
+    .contactform {
+      header {
+        background-image: url(/images/bgheader1.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 70vh;
+        padding: 2vh;
+        display: flex;
+        flex-direction: column;
+        row-gap: 30vh;
+        border-radius: 0px 0px 20px 20px;
+    
+        article {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          row-gap: 10vh;
+        }
+        
+        h2 {
+          a { 
+          @include h2header
+        }
+        }
+      h1 {
+        @include h1header
+      }
+    
+      nav {
+          display: flex;
+          justify-content: space-between;
+          
+        > details { 
+         
+        > ul {
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          border: .1px solid beige;
+          border-radius: 5px;
+          width: 40%;
+          animation: fadeIn 1s;
+          top: 9vh;
+          right: 2vh;
+        }
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+          }
+          to {
+            opacity: 1;
+          }
+        }
+      }
+        li {
+          list-style-type: none;
+          background-color: rgba(0, 0, 255, 0.08);
+          border-bottom: 0.5px solid white;
+          padding-top: 5px;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          a { 
+          text-decoration: none;
+          color: beige;
+          padding: 1%;
+          font-size: 20px;
+          width: 100%;
+        }
+        }
+          > ul {
+              display: none;
+          }
+        summary {
+          color: beige;
+          font-size: 23px;
+          padding-top: 1vh;
+        }
+        }
+     }
+      
+
+// CONTACT FORM SECTION
+
+body {
+  @include displayFlex;
+  row-gap: 8vh
+}
+
+main {
+  @include displayFlex;
+  align-items: center;
+  height: 120vh;
+
+  h1 {
+    padding-top: 7vh;
+  }
+
+ }
+
+.form{
+  width:290px;
+  height:440px;
+  background:#e6e6e6;
+  border-radius:8px;
+  box-shadow:0 0 40px -10px #000;
+  margin:calc(50vh - 220px) auto;
+  padding:20px 30px;
+  max-width:calc(100vw - 40px);
+  box-sizing:border-box;
+  font-family:'Montserrat',sans-serif;
+  position:relative
+}
+
+input{
+  width:100%;
+  padding:10px;
+  box-sizing:border-box;
+  background:none;
+  outline:none;
+  resize:none;
+  border:0;
+  font-family:'Montserrat',sans-serif;
+  transition:all .3s;
+  border-bottom:2px solid #bebed2}
+input:focus{
+  border-bottom:2px solid #78788c}
+p:before{
+  content:attr(type);
+  display:block;
+  margin:28px 0 0;
+  font-size:14px;
+  color:#5a5a5a}
+button{float:right;
+  padding:8px 12px;
+  margin:8px 0 0;
+  font-family:'Montserrat',sans-serif;border:2px solid #78788c;background:0;color:#5a5a6e;cursor:pointer;transition:all .3s}
+button:hover{background:#78788c;
+  color:#fff}
+#contactdiv{
+  position:absolute;
+  bottom:-30px;
+  right:-5px;
+  background:#50505a;
+  color:#fff;
+  width:238px;
+  padding:12px;
+  border-radius:6px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1vh;
+  
+  span {
+    font-size: 10px;
+    letter-spacing: 1px;
+  }
+ }
+
+/* animation properties */
+
+.form {
+  
+  animation-name: my-animation;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  width: 350px;
+  height: 450px;
+  border-radius: 10px;
+}
+
+@keyframes my-animation {
+  from {
+    left: 90vh;
+    opacity: .1;
+  }
+  to {
+    left:0vh;
+    opacity: 1;
+  }
+}
+
+// FOOTER SECTION
+
+ footer {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  height: 155vh;
+  
+  h3 {
+    font-size: 22px;
+    font-weight: 200;
+    padding-bottom: 2vh;
+  }
+  
+  article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 5vh;
+    ul{
+      li {
+        list-style-type: none;
+        line-height: 25px;
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+  span {
+    color:#53a8b6 ;
+    text-decoration: underline;
+  }
+  .instaP {
+    color: rgba(255, 255, 255, 0.301);
+    width: 80%;
+    padding-bottom: 1vh;
+  }
+  .instagram{
+    font-size: 40px;
+  }
+  
+  .mylinks {
+    display: flex;
+    column-gap: 1vh;
+    line-height: 35px;
+    i {
+      font-size: 25px;
+      color: blue;
+    }
+  }
+    }
+}
+}
+
+
+ 
+  

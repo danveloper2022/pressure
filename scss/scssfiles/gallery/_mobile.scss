@@ -1,0 +1,228 @@
+// GALLERY FILE
+
+@media (min-width: 200px) {
+.ourgallery{
+    header {
+        background-image: url(/images/bgheader1.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 70vh;
+        padding: 2vh;
+        display: flex;
+        flex-direction: column;
+        row-gap: 30vh;
+        border-radius: 0px 0px 20px 20px;
+    
+        article {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          row-gap: 10vh;
+        }
+        
+        h2 {
+          a { 
+          @include h2header
+        }
+        }
+      h1 {
+        @include h1header
+      }
+    
+      nav {
+          display: flex;
+          justify-content: space-between;
+          
+        > details { 
+         
+        > ul {
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          border: .1px solid beige;
+          border-radius: 5px;
+          width: 40%;
+          animation: fadeIn 1s;
+          top: 9vh;
+          right: 2vh;
+        }
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+          }
+          to {
+            opacity: 1;
+          }
+        }
+      }
+        li {
+          list-style-type: none;
+          background-color: rgba(0, 0, 255, 0.08);
+          border-bottom: 0.5px solid white;
+          padding-top: 5px;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          a { 
+          text-decoration: none;
+          color: beige;
+          padding: 1%;
+          font-size: 20px;
+          width: 100%;
+        }
+        }
+          > ul {
+              display: none;
+          }
+        summary {
+          color: beige;
+          font-size: 23px;
+          padding-top: 1vh;
+        }
+        }
+      }
+
+    // GALLERY SECTION MOBILE
+
+    main{
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 8vh;
+  
+      p{
+        width: 85%;
+        padding-top: 5vh;
+        text-align: center;
+        font-weight: 700;
+      }
+  
+      .container{
+        
+        width: 100%;
+        .images .imgBx img {
+          width: 100%;
+          height: 100%;
+        }
+         position: relative;
+         min-height: 100vh;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         background:#333 ;
+      
+         .images{
+          margin: 20px;
+          padding: 10px;
+      
+      
+          .imgBx {
+            height: 150px;
+            width: 250px;
+            border: 6px solid #777;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.135);
+            overflow: hidden;
+            cursor: pointer;
+          }
+         }
+      
+        .popup{
+          position: fixed;
+          top: 0;
+          left: 0;
+          background:rgba(0, 0, 0, 0.886);
+          height: 100%;
+          width: 100%;
+          z-index: 100;
+          display: none;
+      
+          img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border: 5px solid  #fff;
+            border-radius: 5px;
+            width: 70%;
+            height: 70%;
+            object-fit: cover;
+          }
+          span {
+            position: absolute;
+            top: 0;
+            right: 10px;
+            font-size: 60px;
+            font-weight: bolder;
+            color: #fff;
+            cursor: pointer;
+            z-index: 100;
+          }
+        }
+        }
+    }
+    
+
+        
+  }
+ 
+    //   FOOTER SECTION MOBILE
+
+      footer {
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        color: white;
+        height: 152vh;
+        
+        h3 {
+          font-size: 22px;
+          font-weight: 200;
+          padding-bottom: 2vh;
+        }
+        
+        article {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          padding-top: 5vh;
+          ul{
+            li {
+              list-style-type: none;
+              line-height: 25px;
+              a {
+                color: white;
+              }
+            }
+          }
+        }
+        span {
+          color:#53a8b6 ;
+          text-decoration: underline;
+        }
+        .instaP {
+          color: rgba(255, 255, 255, 0.301);
+          width: 80%;
+          padding-bottom: 1vh;
+        }
+        .instagram{
+          font-size: 40px;
+        }
+        
+        .mylinks {
+          display: flex;
+          column-gap: 1vh;
+          line-height: 35px;
+          i {
+            font-size: 25px;
+            color: blue;
+          }
+        }
+          }
+
+ }
+
+

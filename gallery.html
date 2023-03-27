@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <title>Gallery</title>
+</head>
+<body class="ourgallery">
+    <header>
+        <nav>
+            <h2> <a href="/index.html">Fresh property <br>services <br> incorporated</a></h2>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/aboutus.html">About us</a></li>
+                <li><a href="/services.html">Services</a></li>
+                <li><a href="/gallery.html">Gallery</a></li>
+                <li><a href="/contactform.html">Contact us</a></li>
+            </ul>
+            <details>
+                <summary class="fa-sharp fa-solid fa-bars"></summary>
+                    <ul>
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/aboutus.html">About us</a></li>
+                        <li><a href="/services.html">Services</a></li>
+                        <li><a href="/gallery.html">Gallery</a></li>
+                        <li><a href="/contactform.html">Contact us</a></li>
+                    </ul>       
+            </details>
+        </nav>
+<article>
+        <h1>
+           Gallery
+        </h1>
+</article>
+</header>
+<main>
+        
+        <p>
+            The pride we take in our work is reflected in the great response we receive from our clients.
+            Take a look at what we can do for you.  
+        </p>
+    
+    <div class="linegreen"></div>
+    
+    <div class="container">
+        <div class="images">
+            <div class="imgBx">
+                <img src="./images/gallery/1.png" alt="img1">
+            </div>
+        </div>
+        <div class="images">
+            <div class="imgBx">
+                <img src="./images/gallery/2.png" alt="img2">
+            </div>
+        </div>
+        <div class="images">
+            <div class="imgBx">
+                <img src="./images/gallery/3.png" alt="img3">
+            </div>
+        </div>
+        <div class="images">
+            <div class="imgBx">
+                <img src="./images/gallery/4.png" alt="img4">
+            </div>
+        </div>
+        <div class="images">
+            <div class="imgBx">
+                <img src="./images/gallery/5.png" alt="img5">
+            </div>
+        </div>
+        <div class="images">
+            <div class="imgBx">
+                <img src="./images/gallery/6.png" alt="img6">
+            </div>
+        </div>
+        <div class="images">
+            <div class="imgBx">
+                <img src="./images/gallery/7.png" alt="img7">
+            </div>
+        </div>
+        <div class="images">
+            <div class="imgBx">
+                <img src="./images/gallery/8.png" alt="img8">
+            </div>
+        </div>
+        <div class="images">
+            <div class="imgBx">
+                <img src="./images/gallery/9.png" alt="img9">
+            </div>
+        </div>
+        <div class="images">
+            <div class="imgBx">
+                <img src="./images/gallery/10.png" alt="img10">
+            </div>
+        </div>
+
+        <div class="popup">
+            <span>&times;</span>
+            <img src="./images/gallery/1.png" alt="">
+        </div>
+
+    </div>
+
+</main>
+<footer>
+    <article>
+        <h3>Pages</h3>
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/aboutus.html">About us</a></li>
+            <li><a href="/services.html">Services</a></li>
+            <li><a href="/gallery.html">Gallery</a></li>
+            <li><a href="/contactform.html">Contact us</a></li>
+        </ul> 
+    </article>
+    <article>
+        <h3>Address</h3>
+        <ul>
+            <li>348 4th street</li>
+            <li>North Vancouver</li>
+            <li>Canada</li>
+        </ul>
+    </article>
+    <article>
+        <h3>Contact</h3>
+        <ul>
+            <li>My email:</li>
+            <li><span>freshpropertyservicesincorp@gmail.com</span></li>
+            <li>My phone number:</li>
+            <li><span>Phone number</span></li>
+        </ul>
+    </article>
+    <article>
+        <h3>My links</h3>
+        <p class="instaP">Dont forget to follow our news, updates and activities on:</p>
+        <p class="instagram"><a target="_blank" href=""><i class="fa-brands fa-instagram"></i></a></p>
+        
+    </article>
+
+    <article>
+        <p>Designed by <span>Danveloperb@gmail.com</span></p>
+        <aside class="mylinks">
+            <p>LinkedIn:</p>
+            <a target="_blank" href="https://www.linkedin.com/in/daniel-blecha-9a90aa226/"><i class="fa-brands fa-linkedin-in"></i></a>
+        </aside>
+    </article>
+    
+</footer>
+
+<script>
+
+    document.querySelectorAll('.images img').forEach(image =>{
+        image.onclick = () =>{
+            document.querySelector('.popup').style.display = 'block';
+            document.querySelector('.popup img').src = image.getAttribute('src');
+        }
+    });
+    document.querySelector('.popup span').onclick = () =>{ 
+        document.querySelector('.popup').style.display = 'none';
+    };
+</script>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+@mixin displayFlex {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+}
+
+@mixin h1header {
+    color: beige;
+    text-align: center;
+    font-size: 50px;
+}
+
+@mixin h2header {
+    color: beige;
+          text-shadow: 2px 1px gray;
+          letter-spacing: 1px;
+          text-decoration: none;
+          font-size: 30px;
+}

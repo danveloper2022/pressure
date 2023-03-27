@@ -1,0 +1,173 @@
+// SERVICES FILE
+
+@media (min-width: 200px) {
+  .services{
+        header {
+            background-image: url(/images/bgheader1.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 70vh;
+            padding: 2vh;
+            display: flex;
+            flex-direction: column;
+            row-gap: 30vh;
+            border-radius: 0px 0px 20px 20px;
+        
+            article {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              row-gap: 10vh;
+            }
+            
+            h2 {
+              a { 
+              @include h2header
+            }
+            }
+          h1 {
+            @include h1header
+          }
+        
+          nav {
+              display: flex;
+              justify-content: space-between;
+              
+            > details { 
+             
+            > ul {
+              display: flex;
+              flex-direction: column;
+              position: absolute;
+              border: .1px solid beige;
+              border-radius: 5px;
+              width: 40%;
+              animation: fadeIn 1s;
+              top: 9vh;
+              right: 2vh;
+            }
+            @keyframes fadeIn {
+              from {
+                opacity: 0;
+              }
+              to {
+                opacity: 1;
+              }
+            }
+          }
+            li {
+              list-style-type: none;
+              background-color: rgba(0, 0, 255, 0.08);
+              border-bottom: 0.5px solid white;
+              padding-top: 5px;
+              text-align: center;
+              display: flex;
+              justify-content: center;
+              a { 
+              text-decoration: none;
+              color: beige;
+              padding: 1%;
+              font-size: 20px;
+              width: 100%;
+            }
+            }
+              > ul {
+                  display: none;
+              }
+            summary {
+              color: beige;
+              font-size: 23px;
+              padding-top: 1vh;
+            }
+            }
+         }
+
+// MIDDLE SECTION OF PAGE
+
+  main {
+        @include displayFlex;
+        align-items: center;
+        row-gap: 8vh;
+        padding-bottom: 8vh;
+        height: 205vh;
+    
+    .pageservice {
+        @include displayFlex;
+        width: 90%;
+
+        article {
+            @include displayFlex;
+            align-items: center;
+            text-align: center;
+            width: 90%;
+        }
+    }
+    blockquote {
+        @include displayFlex;
+        align-items: center;
+        width: 90%;
+        text-align: center;
+        padding-top: 8vh;
+
+    }
+    }
+
+    // FOOTER SECTION
+
+ 
+ footer {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    height: 155vh;
+    
+    h3 {
+      font-size: 22px;
+      font-weight: 200;
+      padding-bottom: 2vh;
+    }
+    
+    article {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding-top: 5vh;
+      ul{
+        li {
+          list-style-type: none;
+          line-height: 25px;
+          a {
+            color: white;
+          }
+        }
+      }
+    }
+    span {
+      color:#53a8b6 ;
+      text-decoration: underline;
+    }
+    .instaP {
+      color: rgba(255, 255, 255, 0.301);
+      width: 80%;
+      padding-bottom: 1vh;
+    }
+    .instagram{
+      font-size: 40px;
+    }
+    
+    .mylinks {
+      display: flex;
+      column-gap: 1vh;
+      line-height: 35px;
+      i {
+        font-size: 25px;
+        color: blue;
+      }
+    }
+}
+  }    
+    
+}       

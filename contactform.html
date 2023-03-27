@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Contact</title>
+</head>
+<body class="contactform">
+    <header>
+        <nav>
+            <h2> <a href="/index.html">Fresh property <br>services <br> incorporated</a></h2>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/aboutus.html">About us</a></li>
+                <li><a href="/services.html">Services</a></li>
+                <li><a href="/gallery.html">Gallery</a></li>
+                <li><a href="/contactform.html">Contact us</a></li>
+            </ul> 
+            <details>
+                <summary class="fa-sharp fa-solid fa-bars"></summary>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/aboutus.html">About us</a></li>
+                    <li><a href="/services.html">Services</a></li>
+                    <li><a href="/gallery.html">Gallery</a></li>
+                    <li><a href="/contactform.html">Contact us</a></li>
+                </ul>       
+            </details>
+        </nav>
+  
+        <h1>
+          Contact us
+        </h1>
+</header>
+<main>
+    
+        <h1>Stay in touch</h1>
+    
+        <form class="form" action="https://formsubmit.co/el/haluxe" method="POST">
+            <input type="text" name="Name" placeholder="Full name" required>
+            <input type="email" name="Email" placeholder="Email" required>
+            <input type="number" name="Number" placeholder="Your telephone number" required>
+            <input type="text" name="Adress" placeholder="Street" required>
+            <input type="text" name="Adress" placeholder="City" required>
+            <textarea class="textarea" name="Message" placeholder="Message" cols="30" rows="10"></textarea>
+            <button id="btn" type="button">Send</button>
+            <div id="contactdiv">
+                <span class="fa fa-phone">001 1023 567</span>
+                <span>freshpropertyservicesincorp@gmail.com</span>
+            </div>
+        </form>
+
+
+
+</main>
+<footer>
+    <article>
+        <h3>Pages</h3>
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/aboutus.html">About us</a></li>
+            <li><a href="/services.html">Services</a></li>
+            <li><a href="/gallery.html">Gallery</a></li>
+            <li><a href="/contactform.html">Contact us</a></li>
+        </ul> 
+    </article>
+    <article>
+        <h3>Address</h3>
+        <ul>
+            <li>348 4th street</li>
+            <li>North Vancouver</li>
+            <li>Canada</li>
+        </ul>
+    </article>
+    <article>
+        <h3>Contact</h3>
+        <ul>
+            <li>My email:</li>
+            <li><span>freshpropertyservicesincorp@gmail.com</span></li>
+            <li>My phone number:</li>
+            <li><span>Phone number</span></li>
+        </ul>
+    </article>
+    <article>
+        <h3>My links</h3>
+        <p class="instaP">Dont forget to follow our news, updates and activities on:</p>
+        <p class="instagram"><a target="_blank" href=""><i class="fa-brands fa-instagram"></i></a></p>
+        
+    </article>
+
+    <article>
+        <p>Designed by <span>Danveloperb@gmail.com</span></p>
+        <aside class="mylinks">
+            <p>LinkedIn:</p>
+            <a target="_blank" href="https://www.linkedin.com/in/daniel-blecha-9a90aa226/"><i class="fa-brands fa-linkedin-in"></i></a>
+        </aside>
+    </article>
+    
+</footer>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    var btn = document.getElementById("btn");
+    btn.addEventListener("click",function(e){
+        e.preventDefault()
+        Email.send({
+    Host : "smtp.gmail.com",
+    Username : "danveloperb@gmail.com",
+    Password : "password",
+    To : 'them@website.com',
+    From : "you@isp.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+    })
+</script>
+    
+</body>
+</html>
