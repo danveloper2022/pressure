@@ -4,13 +4,13 @@
 }
 
 .linegreen {
-  background-color: rgb(2, 160, 2);
+  background-color: #ffcf40;
   width: 70px;
   height: 3px;
 }
 
 @media (min-width: 200px) {
-  .home header {
+  #index header {
     background-image: url(/images/bgheader1.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -19,34 +19,65 @@
     padding: 2vh;
     display: flex;
     flex-direction: column;
-    row-gap: 30vh;
+    row-gap: 22vh;
     border-radius: 0px 0px 20px 20px;
   }
-  .home header article {
+  #index header article {
     display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 10vh;
   }
-  .home header h2 a {
+  #index header article > h1 {
+    color: white;
+    text-align: center;
+    width: 80%;
+    font-size: 25px;
+  }
+  #index header h2 a {
     color: beige;
     text-shadow: 2px 1px gray;
     letter-spacing: 1px;
     text-decoration: none;
+    font-size: 24px;
   }
-  .home header h1 {
-    color: white;
+  #index header h1 {
+    color: beige;
     text-align: center;
-    width: 80%;
+    font-size: 50px;
   }
-  .home header figure img {
-    width: 150px;
-  }
-  .home header nav {
+  #index header nav {
     display: flex;
     justify-content: space-between;
   }
-  .home header nav > details > ul {
+  #index header nav li {
+    list-style-type: none;
+    background-color: rgba(0, 0, 255, 0.08);
+    border-bottom: 0.5px solid white;
+    padding-top: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  #index header nav li a {
+    text-decoration: none;
+    color: beige;
+    padding: 1%;
+    font-size: 20px;
+    width: 100%;
+  }
+  #index header nav > ul {
+    display: none;
+  }
+  #index header nav summary {
+    color: beige;
+    font-size: 23px;
+    padding-top: 1vh;
+  }
+  #index details summary::-webkit-details-marker {
+    display: none;
+  }
+  #index details > ul {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -65,31 +96,10 @@
       opacity: 1;
     }
   }
-  .home header nav li {
-    list-style-type: none;
-    background-color: rgba(0, 0, 255, 0.08);
-    border-bottom: 0.5px solid white;
-    padding-top: 5px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
+  #index figure img {
+    width: 150px;
   }
-  .home header nav li a {
-    text-decoration: none;
-    color: beige;
-    padding: 1%;
-    font-size: 20px;
-    width: 100%;
-  }
-  .home header nav > ul {
-    display: none;
-  }
-  .home header nav summary {
-    color: beige;
-    font-size: 23px;
-    padding-top: 1vh;
-  }
-  .home .about {
+  #index .about {
     background-color: whitesmoke;
     display: flex;
     flex-direction: column;
@@ -100,43 +110,43 @@
     padding: 5vh 0vh 5vh 0vh;
     position: relative;
   }
-  .home .about article {
+  #index .about article {
     display: flex;
     flex-direction: column;
     row-gap: 3vh;
     justify-content: center;
     align-items: center;
   }
-  .home .about article a {
+  #index .about article a {
     text-decoration: none;
     color: rgb(22, 186, 22);
     border: 0.3px solid rgb(22, 186, 22);
     padding: 1vh 10vh;
   }
-  .home .about article i {
+  #index .about article i {
     font-size: 30px;
     padding-top: 1vh;
   }
-  .home .about article p {
+  #index .about article p {
     width: 80%;
     text-align: center;
   }
-  .home .about article h4 {
+  #index .about article h4 {
     font-size: 27px;
     font-weight: 700;
     text-transform: capitalize;
   }
-  .home .softwash {
+  #index .softwash {
     background-image: url(/images/bgmiddle.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
     width: 100%;
-    height: 151vh;
+    height: 150vh;
     display: flex;
   }
-  .home .softwash .overlay {
+  #index .softwash .overlay {
     width: 100%;
     height: 150vh;
     background-color: rgba(9, 9, 9, 0.5);
@@ -146,22 +156,22 @@
     align-items: center;
     row-gap: 3vh;
   }
-  .home .softwash .overlay aside, .home .softwash .overlay h1 {
+  #index .softwash .overlay aside, #index .softwash .overlay h1 {
     width: 80%;
     text-align: center;
   }
-  .home .softwash .overlay h4 {
+  #index .softwash .overlay h4 {
     padding-bottom: 1vh;
     font-weight: 700;
     font-size: 20px;
   }
-  .home .softwash .overlay p {
+  #index .softwash .overlay p {
     font-size: 18px;
   }
-  .home .softwash .overlay h1 {
+  #index .softwash .overlay h1 {
     font-size: 24px;
   }
-  .home .slideshow {
+  #index .slideshow {
     background-color: whitesmoke;
     height: 110vh;
     display: flex;
@@ -173,30 +183,30 @@
     /* Fading animation */
     /* On smaller screens, decrease text size */
   }
-  .home .slideshow h1 {
+  #index .slideshow h1 {
     font-size: 22px;
     width: 80%;
     padding-top: 6vh;
     text-align: center;
     font-weight: 800;
   }
-  .home .slideshow p {
+  #index .slideshow p {
     width: 80%;
     text-align: center;
     font-size: 18px;
   }
-  .home .slideshow .mySlides {
+  #index .slideshow .mySlides {
     display: none;
   }
-  .home .slideshow img {
+  #index .slideshow img {
     vertical-align: middle;
   }
-  .home .slideshow .slideshow-container {
+  #index .slideshow .slideshow-container {
     max-width: 1000px;
     position: relative;
     margin: auto;
   }
-  .home .slideshow .text {
+  #index .slideshow .text {
     color: beige;
     font-size: 15px;
     padding: 8px 12px;
@@ -206,7 +216,7 @@
     text-align: center;
     background-color: rgba(0, 0, 0, 0.491);
   }
-  .home .slideshow .dot {
+  #index .slideshow .dot {
     height: 15px;
     width: 15px;
     margin: 0 2px;
@@ -215,10 +225,10 @@
     display: inline-block;
     transition: background-color 0.6s ease;
   }
-  .home .slideshow .active {
+  #index .slideshow .active {
     background-color: #717171;
   }
-  .home .slideshow .fade {
+  #index .slideshow .fade {
     animation-name: fade;
     animation-duration: 1.5s;
   }
@@ -232,13 +242,13 @@
   }
 }
 @media only screen and (min-width: 200px) and (max-width: 300px) {
-  .home .slideshow .text {
+  #index .slideshow .text {
     font-size: 11px;
   }
 }
 @media (min-width: 200px) {
-  .home .services {
-    height: 149vh;
+  #index .services {
+    height: 133vh;
     background-image: url(/images/bglastpart.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -250,13 +260,13 @@
     justify-content: center;
     row-gap: 2vh;
   }
-  .home .services h1 {
+  #index .services h1 {
     font-size: 23px;
     color: white;
     padding-top: 3vh;
     text-transform: uppercase;
   }
-  .home .services article {
+  #index .services article {
     color: white;
     display: flex;
     flex-direction: column;
@@ -268,66 +278,94 @@
     background-color: rgba(113, 113, 113, 0.4941176471);
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.247) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.219) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
   }
-  .home .services article p {
+  #index .services article p {
     text-align: center;
     font-size: 18px;
   }
-  .home .services article h2 {
+  #index .services article h2 {
     font-size: 20px;
   }
 }
 @media (min-width: 200px) {
-  .home footer {
+  #index footer {
     display: flex;
     flex-direction: column;
     background-color: black;
     color: white;
-    height: 155vh;
+    height: 153vh;
+    align-items: center;
+    justify-content: center;
   }
-  .home footer h3 {
+  #index footer h3 {
     font-size: 22px;
     font-weight: 200;
-    padding-bottom: 2vh;
   }
-  .home footer article {
+  #index footer article {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding-top: 5vh;
   }
-  .home footer article ul li {
+  #index footer article ul li {
     list-style-type: none;
     line-height: 25px;
   }
-  .home footer article ul li a {
+  #index footer article ul li a {
     color: white;
   }
-  .home footer span {
+  #index footer span {
     color: #53a8b6;
     text-decoration: underline;
+    font-size: 17px;
   }
-  .home footer .instaP {
+  #index footer .instaP {
     color: rgba(255, 255, 255, 0.301);
     width: 80%;
     padding-bottom: 1vh;
   }
-  .home footer .instagram {
+  #index footer .instagram {
     font-size: 40px;
   }
-  .home footer .mylinks {
+  #index footer .facebook {
+    font-size: 40px;
+    color: blue;
+  }
+  #index footer .firstfooter {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 4vh;
+  }
+  #index footer .firstfooter > article:nth-child(4) {
+    display: flex;
+    align-items: center;
+    width: 60%;
+  }
+  #index footer .firstfooter > article:nth-child(4) div > a {
+    color: blue;
+    font-size: 40px;
+  }
+  #index footer .mylinks {
     display: flex;
     -moz-column-gap: 1vh;
          column-gap: 1vh;
     line-height: 35px;
   }
-  .home footer .mylinks i {
+  #index footer .mylinks i {
     font-size: 25px;
     color: blue;
   }
+  #index footer .secondfooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 5vh;
+    color: rgba(255, 255, 255, 0.301);
+  }
 }
 @media (min-width: 200px) {
-  .aboutus header {
+  #aboutus header {
     background-image: url(/images/bgheader1.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -339,28 +377,28 @@
     row-gap: 33vh;
     border-radius: 0px 0px 20px 20px;
   }
-  .aboutus header article {
+  #aboutus header article {
     display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 10vh;
   }
-  .aboutus header h2 a {
+  #aboutus header h2 a {
     color: beige;
     text-shadow: 2px 1px gray;
     letter-spacing: 1px;
     text-decoration: none;
   }
-  .aboutus header h1 {
+  #aboutus header h1 {
     color: beige;
     text-align: center;
     font-size: 50px;
   }
-  .aboutus header nav {
+  #aboutus header nav {
     display: flex;
     justify-content: space-between;
   }
-  .aboutus header nav > details > ul {
+  #aboutus header nav > details > ul {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -379,7 +417,7 @@
       opacity: 1;
     }
   }
-  .aboutus header nav li {
+  #aboutus header nav li {
     list-style-type: none;
     background-color: rgba(0, 0, 255, 0.08);
     border-bottom: 0.5px solid white;
@@ -388,22 +426,22 @@
     display: flex;
     justify-content: center;
   }
-  .aboutus header nav li a {
+  #aboutus header nav li a {
     text-decoration: none;
     color: beige;
     padding: 1%;
     font-size: 20px;
     width: 100%;
   }
-  .aboutus header nav > ul {
+  #aboutus header nav > ul {
     display: none;
   }
-  .aboutus header nav summary {
+  #aboutus header nav summary {
     color: beige;
     font-size: 23px;
     padding-top: 1vh;
   }
-  .aboutus .ourservices {
+  #aboutus .ourservices {
     background-color: whitesmoke;
     height: 130vh;
     display: flex;
@@ -412,7 +450,7 @@
     justify-content: center;
     align-items: center;
   }
-  .aboutus .ourservices article {
+  #aboutus .ourservices article {
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -422,60 +460,63 @@
     padding: 3vh 1vh;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.247) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.219) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
   }
-  .aboutus .ourservices article p {
+  #aboutus .ourservices article p {
     text-align: center;
   }
-  .aboutus footer {
+  #aboutus footer {
     display: flex;
     flex-direction: column;
     background-color: black;
     color: white;
     height: 155vh;
   }
-  .aboutus footer h3 {
+  #aboutus footer h3 {
     font-size: 22px;
     font-weight: 200;
     padding-bottom: 2vh;
   }
-  .aboutus footer article {
+  #aboutus footer article {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     padding-top: 5vh;
   }
-  .aboutus footer article ul li {
+  #aboutus footer article ul li {
     list-style-type: none;
     line-height: 25px;
   }
-  .aboutus footer article ul li a {
+  #aboutus footer article ul li a {
     color: white;
   }
-  .aboutus footer span {
+  #aboutus footer span {
     color: #53a8b6;
     text-decoration: underline;
   }
-  .aboutus footer .instaP {
+  #aboutus footer .instaP {
     color: rgba(255, 255, 255, 0.301);
     width: 80%;
     padding-bottom: 1vh;
   }
-  .aboutus footer .instagram {
+  #aboutus footer .instagram {
     font-size: 40px;
   }
-  .aboutus footer .mylinks {
+  #aboutus footer .mylinks {
     display: flex;
     -moz-column-gap: 1vh;
          column-gap: 1vh;
     line-height: 35px;
   }
-  .aboutus footer .mylinks i {
+  #aboutus footer .mylinks i {
     font-size: 25px;
     color: blue;
   }
 }
 @media (min-width: 200px) {
-  .ourgallery header {
+  #ourgallery body {
+    background-color: #eef2e2;
+  }
+  #ourgallery header {
     background-image: url(/images/bgheader1.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -487,29 +528,56 @@
     row-gap: 30vh;
     border-radius: 0px 0px 20px 20px;
   }
-  .ourgallery header article {
+  #ourgallery header article {
     display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 10vh;
   }
-  .ourgallery header h2 a {
+  #ourgallery header h2 a {
     color: beige;
     text-shadow: 2px 1px gray;
     letter-spacing: 1px;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 24px;
   }
-  .ourgallery header h1 {
+  #ourgallery header h1 {
     color: beige;
     text-align: center;
     font-size: 50px;
   }
-  .ourgallery header nav {
+  #ourgallery header nav {
     display: flex;
     justify-content: space-between;
   }
-  .ourgallery header nav > details > ul {
+  #ourgallery header nav li {
+    list-style-type: none;
+    background-color: rgba(0, 0, 255, 0.08);
+    border-bottom: 0.5px solid white;
+    padding-top: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  #ourgallery header nav li a {
+    text-decoration: none;
+    color: beige;
+    padding: 1%;
+    font-size: 20px;
+    width: 100%;
+  }
+  #ourgallery header nav > ul {
+    display: none;
+  }
+  #ourgallery header nav summary {
+    color: beige;
+    font-size: 23px;
+    padding-top: 1vh;
+  }
+  #ourgallery details summary::-webkit-details-marker {
+    display: none;
+  }
+  #ourgallery details > ul {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -528,43 +596,20 @@
       opacity: 1;
     }
   }
-  .ourgallery header nav li {
-    list-style-type: none;
-    background-color: rgba(0, 0, 255, 0.08);
-    border-bottom: 0.5px solid white;
-    padding-top: 5px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-  }
-  .ourgallery header nav li a {
-    text-decoration: none;
-    color: beige;
-    padding: 1%;
-    font-size: 20px;
-    width: 100%;
-  }
-  .ourgallery header nav > ul {
-    display: none;
-  }
-  .ourgallery header nav summary {
-    color: beige;
-    font-size: 23px;
-    padding-top: 1vh;
-  }
-  .ourgallery main {
+  #ourgallery main {
     display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 8vh;
+    height: 170vh;
   }
-  .ourgallery main p {
+  #ourgallery main p {
     width: 85%;
     padding-top: 5vh;
     text-align: center;
     font-weight: 700;
   }
-  .ourgallery main .container {
+  #ourgallery main .container {
     width: 100%;
     position: relative;
     min-height: 100vh;
@@ -572,25 +617,24 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #333;
   }
-  .ourgallery main .container .images .imgBx img {
+  #ourgallery main .container .images .imgBx img {
     width: 100%;
     height: 100%;
   }
-  .ourgallery main .container .images {
-    margin: 20px;
+  #ourgallery main .container .images {
+    margin: 10px;
     padding: 10px;
   }
-  .ourgallery main .container .images .imgBx {
-    height: 150px;
-    width: 250px;
-    border: 6px solid #777;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.135);
+  #ourgallery main .container .images .imgBx {
+    height: 160px;
+    width: 210px;
+    border: 4px solid rgba(119, 119, 119, 0.5450980392);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.299);
     overflow: hidden;
     cursor: pointer;
   }
-  .ourgallery main .container .popup {
+  #ourgallery main .container .popup {
     position: fixed;
     top: 0;
     left: 0;
@@ -600,19 +644,19 @@
     z-index: 100;
     display: none;
   }
-  .ourgallery main .container .popup img {
+  #ourgallery main .container .popup img {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border: 5px solid #fff;
     border-radius: 5px;
-    width: 70%;
-    height: 70%;
+    width: 95%;
+    height: 60%;
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .ourgallery main .container .popup span {
+  #ourgallery main .container .popup span {
     position: absolute;
     top: 0;
     right: 10px;
@@ -622,57 +666,83 @@
     cursor: pointer;
     z-index: 100;
   }
-  footer {
+  #ourgallery footer {
     display: flex;
     flex-direction: column;
     background-color: black;
     color: white;
-    height: 152vh;
+    height: 160vh;
+    align-items: center;
   }
-  footer h3 {
+  #ourgallery footer h3 {
     font-size: 22px;
     font-weight: 200;
-    padding-bottom: 2vh;
   }
-  footer article {
+  #ourgallery footer article {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding-top: 5vh;
   }
-  footer article ul li {
+  #ourgallery footer article ul li {
     list-style-type: none;
     line-height: 25px;
   }
-  footer article ul li a {
+  #ourgallery footer article ul li a {
     color: white;
   }
-  footer span {
+  #ourgallery footer span {
     color: #53a8b6;
     text-decoration: underline;
+    font-size: 17px;
   }
-  footer .instaP {
+  #ourgallery footer .instaP {
     color: rgba(255, 255, 255, 0.301);
     width: 80%;
     padding-bottom: 1vh;
   }
-  footer .instagram {
+  #ourgallery footer .instagram {
     font-size: 40px;
   }
-  footer .mylinks {
+  #ourgallery footer .facebook {
+    font-size: 40px;
+    color: blue;
+  }
+  #ourgallery footer .firstfooter {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  #ourgallery footer .firstfooter > article:nth-child(4) {
+    display: flex;
+    align-items: center;
+    width: 60%;
+  }
+  #ourgallery footer .firstfooter > article:nth-child(4) div > a {
+    color: blue;
+    font-size: 40px;
+  }
+  #ourgallery footer .mylinks {
     display: flex;
     -moz-column-gap: 1vh;
          column-gap: 1vh;
     line-height: 35px;
   }
-  footer .mylinks i {
+  #ourgallery footer .mylinks i {
     font-size: 25px;
     color: blue;
   }
+  #ourgallery footer .secondfooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 5vh;
+    color: rgba(255, 255, 255, 0.301);
+  }
 }
 @media (min-width: 200px) {
-  .services header {
+  #services header {
     background-image: url(/images/bgheader1.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -684,29 +754,29 @@
     row-gap: 30vh;
     border-radius: 0px 0px 20px 20px;
   }
-  .services header article {
+  #services header article {
     display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 10vh;
   }
-  .services header h2 a {
+  #services header h2 a {
     color: beige;
     text-shadow: 2px 1px gray;
     letter-spacing: 1px;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 24px;
   }
-  .services header h1 {
+  #services header h1 {
     color: beige;
     text-align: center;
     font-size: 50px;
   }
-  .services header nav {
+  #services header nav {
     display: flex;
     justify-content: space-between;
   }
-  .services header nav > details > ul {
+  #services header nav > details > ul {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -725,7 +795,7 @@
       opacity: 1;
     }
   }
-  .services header nav li {
+  #services header nav li {
     list-style-type: none;
     background-color: rgba(0, 0, 255, 0.08);
     border-bottom: 0.5px solid white;
@@ -734,22 +804,22 @@
     display: flex;
     justify-content: center;
   }
-  .services header nav li a {
+  #services header nav li a {
     text-decoration: none;
     color: beige;
     padding: 1%;
     font-size: 20px;
     width: 100%;
   }
-  .services header nav > ul {
+  #services header nav > ul {
     display: none;
   }
-  .services header nav summary {
+  #services header nav summary {
     color: beige;
     font-size: 23px;
     padding-top: 1vh;
   }
-  .services main {
+  #services main {
     display: flex;
     flex-direction: column;
     row-gap: 3vh;
@@ -758,13 +828,13 @@
     padding-bottom: 8vh;
     height: 205vh;
   }
-  .services main .pageservice {
+  #services main .pageservice {
     display: flex;
     flex-direction: column;
     row-gap: 3vh;
     width: 90%;
   }
-  .services main .pageservice article {
+  #services main .pageservice article {
     display: flex;
     flex-direction: column;
     row-gap: 3vh;
@@ -772,7 +842,7 @@
     text-align: center;
     width: 90%;
   }
-  .services main blockquote {
+  #services main blockquote {
     display: flex;
     flex-direction: column;
     row-gap: 3vh;
@@ -781,60 +851,60 @@
     text-align: center;
     padding-top: 8vh;
   }
-  .services footer {
+  #services footer {
     display: flex;
     flex-direction: column;
     background-color: black;
     color: white;
     height: 155vh;
   }
-  .services footer h3 {
+  #services footer h3 {
     font-size: 22px;
     font-weight: 200;
     padding-bottom: 2vh;
   }
-  .services footer article {
+  #services footer article {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     padding-top: 5vh;
   }
-  .services footer article ul li {
+  #services footer article ul li {
     list-style-type: none;
     line-height: 25px;
   }
-  .services footer article ul li a {
+  #services footer article ul li a {
     color: white;
   }
-  .services footer span {
+  #services footer span {
     color: #53a8b6;
     text-decoration: underline;
   }
-  .services footer .instaP {
+  #services footer .instaP {
     color: rgba(255, 255, 255, 0.301);
     width: 80%;
     padding-bottom: 1vh;
   }
-  .services footer .instagram {
+  #services footer .instagram {
     font-size: 40px;
   }
-  .services footer .mylinks {
+  #services footer .mylinks {
     display: flex;
     -moz-column-gap: 1vh;
          column-gap: 1vh;
     line-height: 35px;
   }
-  .services footer .mylinks i {
+  #services footer .mylinks i {
     font-size: 25px;
     color: blue;
   }
 }
 @media (min-width: 200px) {
-  .contactform {
+  #contactform {
     /* animation properties */
   }
-  .contactform header {
+  #contactform header {
     background-image: url(/images/bgheader1.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -846,29 +916,29 @@
     row-gap: 30vh;
     border-radius: 0px 0px 20px 20px;
   }
-  .contactform header article {
+  #contactform header article {
     display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 10vh;
   }
-  .contactform header h2 a {
+  #contactform header h2 a {
     color: beige;
     text-shadow: 2px 1px gray;
     letter-spacing: 1px;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 24px;
   }
-  .contactform header h1 {
+  #contactform header h1 {
     color: beige;
     text-align: center;
     font-size: 50px;
   }
-  .contactform header nav {
+  #contactform header nav {
     display: flex;
     justify-content: space-between;
   }
-  .contactform header nav > details > ul {
+  #contactform header nav > details > ul {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -887,7 +957,7 @@
       opacity: 1;
     }
   }
-  .contactform header nav li {
+  #contactform header nav li {
     list-style-type: none;
     background-color: rgba(0, 0, 255, 0.08);
     border-bottom: 0.5px solid white;
@@ -896,38 +966,38 @@
     display: flex;
     justify-content: center;
   }
-  .contactform header nav li a {
+  #contactform header nav li a {
     text-decoration: none;
     color: beige;
     padding: 1%;
     font-size: 20px;
     width: 100%;
   }
-  .contactform header nav > ul {
+  #contactform header nav > ul {
     display: none;
   }
-  .contactform header nav summary {
+  #contactform header nav summary {
     color: beige;
     font-size: 23px;
     padding-top: 1vh;
   }
-  .contactform body {
+  #contactform body {
     display: flex;
     flex-direction: column;
     row-gap: 3vh;
     row-gap: 8vh;
   }
-  .contactform main {
+  #contactform main {
     display: flex;
     flex-direction: column;
     row-gap: 3vh;
     align-items: center;
     height: 120vh;
   }
-  .contactform main h1 {
+  #contactform main h1 {
     padding-top: 7vh;
   }
-  .contactform .form {
+  #contactform .form {
     width: 290px;
     height: 440px;
     background: #e6e6e6;
@@ -940,7 +1010,7 @@
     font-family: "Montserrat", sans-serif;
     position: relative;
   }
-  .contactform input {
+  #contactform input {
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
@@ -952,17 +1022,17 @@
     transition: all 0.3s;
     border-bottom: 2px solid #bebed2;
   }
-  .contactform input:focus {
+  #contactform input:focus {
     border-bottom: 2px solid #78788c;
   }
-  .contactform p:before {
+  #contactform p:before {
     content: attr(type);
     display: block;
     margin: 28px 0 0;
     font-size: 14px;
     color: #5a5a5a;
   }
-  .contactform button {
+  #contactform button {
     float: right;
     padding: 8px 12px;
     margin: 8px 0 0;
@@ -973,11 +1043,11 @@
     cursor: pointer;
     transition: all 0.3s;
   }
-  .contactform button:hover {
+  #contactform button:hover {
     background: #78788c;
     color: #fff;
   }
-  .contactform #contactdiv {
+  #contactform #contactdiv {
     position: absolute;
     bottom: -30px;
     right: -5px;
@@ -990,11 +1060,11 @@
     flex-direction: column;
     row-gap: 1vh;
   }
-  .contactform #contactdiv span {
+  #contactform #contactdiv span {
     font-size: 10px;
     letter-spacing: 1px;
   }
-  .contactform .form {
+  #contactform .form {
     animation-name: my-animation;
     animation-duration: 2s;
     animation-direction: alternate;
@@ -1013,57 +1083,403 @@
       opacity: 1;
     }
   }
-  .contactform footer {
+  #contactform footer {
     display: flex;
     flex-direction: column;
     background-color: black;
     color: white;
     height: 155vh;
   }
-  .contactform footer h3 {
+  #contactform footer h3 {
     font-size: 22px;
     font-weight: 200;
     padding-bottom: 2vh;
   }
-  .contactform footer article {
+  #contactform footer article {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     padding-top: 5vh;
   }
-  .contactform footer article ul li {
+  #contactform footer article ul li {
     list-style-type: none;
     line-height: 25px;
   }
-  .contactform footer article ul li a {
+  #contactform footer article ul li a {
     color: white;
   }
-  .contactform footer span {
+  #contactform footer span {
     color: #53a8b6;
     text-decoration: underline;
   }
-  .contactform footer .instaP {
+  #contactform footer .instaP {
     color: rgba(255, 255, 255, 0.301);
     width: 80%;
     padding-bottom: 1vh;
   }
-  .contactform footer .instagram {
+  #contactform footer .instagram {
     font-size: 40px;
   }
-  .contactform footer .mylinks {
+  #contactform footer .mylinks {
     display: flex;
     -moz-column-gap: 1vh;
          column-gap: 1vh;
     line-height: 35px;
   }
-  .contactform footer .mylinks i {
+  #contactform footer .mylinks i {
     font-size: 25px;
     color: blue;
   }
 }
-@media (min-width: 1000px) {
-  #footerClass {
+@media (min-width: 600px) {
+  #aboutus header {
+    row-gap: 20vh;
+  }
+  #aboutus header nav > h2 > a {
+    font-size: 32px;
+  }
+  #aboutus header nav > details > ul {
+    width: 20%;
+  }
+}
+@media (min-width: 600px) {
+  #contactform header {
+    row-gap: 20vh;
+  }
+  #contactform header nav > h2 > a {
+    font-size: 32px;
+  }
+  #contactform header nav > details > ul {
+    width: 20%;
+  }
+}
+@media (min-width: 600px) {
+  #index header {
+    height: 120vh;
+    row-gap: 20vh;
+  }
+  #index header nav > h2 > a {
+    font-size: 32px;
+  }
+  #index header nav > details > ul {
+    width: 30%;
+  }
+  #index .softwash {
+    height: 100vh;
+  }
+  #index .overlay {
+    height: 100vh;
+  }
+  #index footer {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 13vh;
+  }
+  #index footer .firstfooter {
+    display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    justify-content: center;
+    -moz-column-gap: 7vh;
+         column-gap: 7vh;
+    align-items: baseline;
+    margin-top: 4vh;
+  }
+  #index footer .firstfooter article:nth-child(4) {
+    width: 17%;
+  }
+  #index footer .firstfooter article:nth-child(4) > aside {
+    display: flex;
+    -moz-column-gap: 3vh;
+         column-gap: 3vh;
+  }
+}
+@media (min-width: 600px) {
+  #ourgallery header {
+    row-gap: 20vh;
+  }
+  #ourgallery header nav > h2 > a {
+    font-size: 32px;
+  }
+  #ourgallery header nav > details > ul {
+    width: 20%;
+  }
+  #ourgallery main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 8vh;
+    height: 170vh;
+  }
+  #ourgallery main p {
+    width: 85%;
+    padding-top: 5vh;
+    text-align: center;
+    font-weight: 700;
+    font-size: 19px;
+  }
+  #ourgallery main .container {
+    width: 100%;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #ourgallery main .container .images .imgBx img {
+    width: 100%;
+    height: 100%;
+  }
+  #ourgallery main .container .images {
+    margin: 10px;
+    padding: 10px;
+  }
+  #ourgallery main .container .images .imgBx {
+    height: 160px;
+    width: 210px;
+    border: 4px solid rgba(119, 119, 119, 0.5450980392);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.299);
+    overflow: hidden;
+    cursor: pointer;
+  }
+  #ourgallery main .container .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.886);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+  }
+  #ourgallery main .container .popup img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #fff;
+    border-radius: 5px;
+    width: 95%;
+    height: 60%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #ourgallery main .container .popup span {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 60px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+  }
+  #ourgallery footer {
+    padding-top: 3vh;
+    height: 135vh;
+  }
+  #ourgallery footer .firstfooter {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+  }
+  #ourgallery article:nth-child(4) {
+    width: 17%;
+  }
+  #ourgallery article:nth-child(4) > aside {
+    display: flex;
+    -moz-column-gap: 3vh;
+         column-gap: 3vh;
+  }
+}
+@media (min-width: 600px) {
+  #services header {
+    row-gap: 20vh;
+  }
+  #services header nav > h2 > a {
+    font-size: 32px;
+  }
+  #services header nav > details > ul {
+    width: 20%;
+  }
+}
+@media (min-width: 1000px) {
+  #index header {
+    display: flex;
+    justify-content: space-between;
+    row-gap: 10vh;
+    height: 80vh;
+  }
+  #index header > nav > ul {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+  }
+  #index header nav > ul > li {
+    width: 100%;
+    height: 30px;
+    background: none;
+    border-bottom: none;
+  }
+  #index header nav > ul > li a {
+    font-size: 27px;
+  }
+  #index details {
+    display: none;
+  }
+  #index footer {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 13vh;
+  }
+  #index footer .firstfooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-content: center;
+    -moz-column-gap: 7vh;
+         column-gap: 7vh;
+    align-items: baseline;
+    margin-top: 4vh;
+  }
+  #index footer .firstfooter article:nth-child(4) {
+    width: 17%;
+  }
+  #index footer .firstfooter article:nth-child(4) > aside {
+    display: flex;
+    -moz-column-gap: 3vh;
+         column-gap: 3vh;
+  }
+}
+@media (min-width: 1000px) {
+  #services header {
+    display: flex;
+    justify-content: space-between;
+  }
+  #services header > nav > ul {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+  }
+  #services header nav > ul > li {
+    width: 100%;
+    height: 30px;
+    background: none;
+    border-bottom: none;
+  }
+  #services header nav > ul > li a {
+    font-size: 27px;
+  }
+  #services details {
+    display: none;
+  }
+}
+@media (min-width: 1000px) {
+  #aboutus header {
+    display: flex;
+    justify-content: space-between;
+  }
+  #aboutus header > nav > ul {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+  }
+  #aboutus header nav > ul > li {
+    width: 100%;
+    height: 30px;
+    background: none;
+    border-bottom: none;
+  }
+  #aboutus header nav > ul > li a {
+    font-size: 27px;
+  }
+  #aboutus details {
+    display: none;
+  }
+}
+@media (min-width: 1000px) {
+  #contactform header {
+    display: flex;
+    justify-content: space-between;
+  }
+  #contactform header > nav > ul {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+  }
+  #contactform header nav > ul > li {
+    width: 100%;
+    height: 30px;
+    background: none;
+    border-bottom: none;
+  }
+  #contactform header nav > ul > li a {
+    font-size: 27px;
+  }
+  #contactform details {
+    display: none;
+  }
+}
+@media (min-width: 1000px) {
+  #ourgallery header {
+    display: flex;
+    justify-content: space-between;
+  }
+  #ourgallery header > nav > ul {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+  }
+  #ourgallery header nav > ul > li {
+    width: 100%;
+    height: 30px;
+    background: none;
+    border-bottom: none;
+  }
+  #ourgallery header nav > ul > li a {
+    font-size: 27px;
+  }
+  #ourgallery details {
+    display: none;
+  }
+  #ourgallery main {
+    height: 120vh;
+  }
+  #ourgallery main .container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  #ourgallery main .container .images {
+    width: 200px;
+    height: 350px;
+  }
+  #ourgallery footer {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 13vh;
+  }
+  #ourgallery footer .firstfooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-content: center;
+    -moz-column-gap: 7vh;
+         column-gap: 7vh;
+    align-items: baseline;
+    margin-top: 4vh;
+  }
+  #ourgallery footer .firstfooter article:nth-child(4) {
+    width: 17%;
+  }
+  #ourgallery footer .firstfooter article:nth-child(4) > aside {
+    display: flex;
+    -moz-column-gap: 3vh;
+         column-gap: 3vh;
   }
 }/*# sourceMappingURL=style.css.map */

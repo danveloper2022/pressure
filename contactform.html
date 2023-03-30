@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Contact</title>
 </head>
-<body class="contactform">
+<body id="contactform">
     <header>
         <nav>
             <h2> <a href="/index.html">Fresh property <br>services <br> incorporated</a></h2>
@@ -48,7 +48,7 @@
             <textarea class="textarea" name="Message" placeholder="Message" cols="30" rows="10"></textarea>
             <button id="btn" type="button">Send</button>
             <div id="contactdiv">
-                <span class="fa fa-phone">001 1023 567</span>
+                <span class="fa fa-phone">604 499 0896</span>
                 <span>freshpropertyservicesincorp@gmail.com</span>
             </div>
         </form>
@@ -57,6 +57,7 @@
 
 </main>
 <footer>
+    <section class="firstfooter">
     <article>
         <h3>Pages</h3>
         <ul>
@@ -81,25 +82,29 @@
             <li>My email:</li>
             <li><span>freshpropertyservicesincorp@gmail.com</span></li>
             <li>My phone number:</li>
-            <li><span>Phone number</span></li>
+            <li><span>604 499 0896</span></li>
         </ul>
     </article>
     <article>
         <h3>My links</h3>
         <p class="instaP">Dont forget to follow our news, updates and activities on:</p>
-        <p class="instagram"><a target="_blank" href=""><i class="fa-brands fa-instagram"></i></a></p>
-        
+        <aside>
+            <p class="instagram"><a target="_blank" href=""><i class="fa-brands fa-instagram"></i></a></p>
+            <div><a target="_blank" href=""><i class="fa-brands fa-facebook"></i></a></div>
+        </aside>
     </article>
+</section>
+<section class="secondfooter">
 
-    <article>
-        <p>Designed by <span>Danveloperb@gmail.com</span></p>
+        <h3>Designed by: <span>Danveloperb@gmail.com</span></h3>
         <aside class="mylinks">
             <p>LinkedIn:</p>
             <a target="_blank" href="https://www.linkedin.com/in/daniel-blecha-9a90aa226/"><i class="fa-brands fa-linkedin-in"></i></a>
         </aside>
-    </article>
-    
+   
+</section>  
 </footer>
+
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 <script>
     var btn = document.getElementById("btn");

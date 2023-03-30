@@ -1,0 +1,21 @@
+// CONTACT TABLET VERSION
+
+@media (min-width: 600px){
+
+#contactform {  
+    header{
+
+        row-gap: 20vh;
+      
+          nav > h2 > a {
+            font-size:32px;
+          }
+      
+          nav > details > ul  {
+            width: 20%;
+          }
+        }
+
+}
+
+}
