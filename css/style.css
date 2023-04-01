@@ -35,8 +35,8 @@
     font-size: 25px;
   }
   #index header h2 a {
-    color: beige;
-    text-shadow: 2px 1px gray;
+    color: #55B4B0;
+    text-shadow: 2px 1px beige;
     letter-spacing: 1px;
     text-decoration: none;
     font-size: 24px;
@@ -62,7 +62,7 @@
   }
   #index header nav li a {
     text-decoration: none;
-    color: beige;
+    color: #55B4B0;
     padding: 1%;
     font-size: 20px;
     width: 100%;
@@ -394,8 +394,8 @@
     row-gap: 10vh;
   }
   #aboutus header h2 a {
-    color: beige;
-    text-shadow: 2px 1px gray;
+    color: #55B4B0;
+    text-shadow: 2px 1px beige;
     letter-spacing: 1px;
     text-decoration: none;
     font-size: 24px;
@@ -421,7 +421,7 @@
   }
   #aboutus header nav li a {
     text-decoration: none;
-    color: beige;
+    color: #55B4B0;
     padding: 1%;
     font-size: 20px;
     width: 100%;
@@ -584,8 +584,8 @@
     row-gap: 10vh;
   }
   #ourgallery header h2 a {
-    color: beige;
-    text-shadow: 2px 1px gray;
+    color: #55B4B0;
+    text-shadow: 2px 1px beige;
     letter-spacing: 1px;
     text-decoration: none;
     font-size: 24px;
@@ -611,7 +611,7 @@
   }
   #ourgallery header nav li a {
     text-decoration: none;
-    color: beige;
+    color: #55B4B0;
     padding: 1%;
     font-size: 20px;
     width: 100%;
@@ -819,8 +819,8 @@
     row-gap: 10vh;
   }
   #services header h2 a {
-    color: beige;
-    text-shadow: 2px 1px gray;
+    color: #55B4B0;
+    text-shadow: 2px 1px beige;
     letter-spacing: 1px;
     text-decoration: none;
     font-size: 24px;
@@ -865,7 +865,7 @@
   }
   #services header nav li a {
     text-decoration: none;
-    color: beige;
+    color: #55B4B0;
     padding: 1%;
     font-size: 20px;
     width: 100%;
@@ -1005,6 +1005,9 @@
   #contactform {
     /* animation properties */
   }
+  #contactform body {
+    background-color: #eef2e2;
+  }
   #contactform header {
     background-image: url(/images/bgheader1.jpg);
     background-position-y: 40%;
@@ -1024,8 +1027,8 @@
     row-gap: 10vh;
   }
   #contactform header h2 a {
-    color: beige;
-    text-shadow: 2px 1px gray;
+    color: #55B4B0;
+    text-shadow: 2px 1px beige;
     letter-spacing: 1px;
     text-decoration: none;
     font-size: 24px;
@@ -1070,7 +1073,7 @@
   }
   #contactform header nav li a {
     text-decoration: none;
-    color: beige;
+    color: #55B4B0;
     padding: 1%;
     font-size: 20px;
     width: 100%;
@@ -1098,6 +1101,10 @@
   }
   #contactform main h1 {
     padding-top: 7vh;
+    font-size: 52px;
+    color: #55B4B0;
+    text-shadow: 2px 1px beige;
+    text-decoration: underline;
   }
   #contactform .form {
     width: 290px;
@@ -1311,6 +1318,23 @@
   }
   #contactform header nav > details > ul {
     width: 20%;
+  }
+  #contactform footer {
+    padding-top: 3vh;
+    height: 135vh;
+  }
+  #contactform footer .firstfooter {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+  }
+  #contactform footer article:nth-child(4) {
+    width: 17%;
+  }
+  #contactform footer article:nth-child(4) > aside {
+    display: flex;
+    -moz-column-gap: 3vh;
+         column-gap: 3vh;
   }
 }
 @media (min-width: 600px) {
@@ -1677,8 +1701,11 @@
   #aboutus .ourservices > article {
     width: 60%;
   }
+  #aboutus .ourservices > article p {
+    font-size: 23px;
+  }
   #aboutus .ourservices > article h1 {
-    font-size: 30px;
+    font-size: 35px;
   }
   #aboutus footer {
     height: 60vh;
@@ -1732,6 +1759,30 @@
   }
   #contactform details {
     display: none;
+  }
+  #contactform footer {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 13vh;
+  }
+  #contactform footer .firstfooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-content: center;
+    -moz-column-gap: 7vh;
+         column-gap: 7vh;
+    align-items: baseline;
+    margin-top: 4vh;
+  }
+  #contactform footer .firstfooter article:nth-child(4) {
+    width: 17%;
+  }
+  #contactform footer .firstfooter article:nth-child(4) > aside {
+    display: flex;
+    -moz-column-gap: 3vh;
+         column-gap: 3vh;
   }
 }
 @media (min-width: 1000px) {

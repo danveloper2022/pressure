@@ -15,6 +15,24 @@
             width: 20%;
           }
         }
+        footer {
+          padding-top: 3vh;
+          height: 135vh;
+          .firstfooter {
+            @include displayFlex
+          }
+        
+        
+        article:nth-child(4){
+          width: 17%;
+          
+          > aside {
+            display: flex;
+            column-gap: 3vh;
+          }
+        }
+          
+        }
 
 }
 

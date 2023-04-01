@@ -32,5 +32,31 @@
       details{
           display: none;
         }
+        footer{
+          height:60vh;
+          display: flex;
+          flex-direction: column;
+          row-gap: 13vh;
+          
+          .firstfooter { 
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          justify-content: center;
+          column-gap: 7vh;
+          align-items: baseline;
+          margin-top: 4vh;
+          
+        
+          article:nth-child(4){
+            width: 17%;
+            
+            > aside {
+              display: flex;
+              column-gap: 3vh;
+            }
+          }
+        }
+        }
 }
 }
