@@ -5,7 +5,7 @@
 
 .linegreen {
   background-color: #ffcf40;
-  width: 70px;
+  width: 80px;
   height: 3px;
 }
 
@@ -56,6 +56,7 @@
     border-bottom: 0.5px solid white;
     padding-top: 5px;
     text-align: center;
+    align-items: center;
     display: flex;
     justify-content: center;
   }
@@ -144,7 +145,6 @@
     color: white;
     width: 100%;
     height: 150vh;
-    display: flex;
   }
   #index .softwash .overlay {
     width: 100%;
@@ -154,11 +154,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    justify-content: center;
     row-gap: 3vh;
   }
   #index .softwash .overlay aside, #index .softwash .overlay h1 {
     width: 80%;
     text-align: center;
+  }
+  #index .softwash .overlay h1 {
+    font-size: 60px;
   }
   #index .softwash .overlay h4 {
     padding-bottom: 1vh;
@@ -292,7 +296,7 @@
     flex-direction: column;
     background-color: black;
     color: white;
-    height: 153vh;
+    height: 160vh;
     align-items: center;
     justify-content: center;
   }
@@ -305,6 +309,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    row-gap: 3vh;
   }
   #index footer article ul li {
     list-style-type: none;
@@ -312,6 +317,12 @@
   }
   #index footer article ul li a {
     color: white;
+  }
+  #index footer .firstfooter > article > h3 {
+    font-size: 21px;
+    font-weight: 200;
+    color: #ffcf40;
+    text-decoration: underline;
   }
   #index footer span {
     color: #53a8b6;
@@ -334,7 +345,6 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    row-gap: 4vh;
   }
   #index footer .firstfooter > article:nth-child(4) {
     display: flex;
@@ -367,14 +377,14 @@
 @media (min-width: 200px) {
   #aboutus header {
     background-image: url(/images/bgheader1.jpg);
-    background-position: center;
+    background-position-y: 40%;
     background-repeat: no-repeat;
     background-size: cover;
     height: 70vh;
     padding: 2vh;
     display: flex;
     flex-direction: column;
-    row-gap: 33vh;
+    row-gap: 30vh;
     border-radius: 0px 0px 20px 20px;
   }
   #aboutus header article {
@@ -388,6 +398,7 @@
     text-shadow: 2px 1px gray;
     letter-spacing: 1px;
     text-decoration: none;
+    font-size: 24px;
   }
   #aboutus header h1 {
     color: beige;
@@ -398,25 +409,6 @@
     display: flex;
     justify-content: space-between;
   }
-  #aboutus header nav > details > ul {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    border: 0.1px solid beige;
-    border-radius: 5px;
-    width: 40%;
-    animation: fadeIn 1s;
-    top: 7vh;
-    right: 2vh;
-  }
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
   #aboutus header nav li {
     list-style-type: none;
     background-color: rgba(0, 0, 255, 0.08);
@@ -424,6 +416,7 @@
     padding-top: 5px;
     text-align: center;
     display: flex;
+    align-items: center;
     justify-content: center;
   }
   #aboutus header nav li a {
@@ -440,6 +433,28 @@
     color: beige;
     font-size: 23px;
     padding-top: 1vh;
+  }
+  #aboutus details summary::-webkit-details-marker {
+    display: none;
+  }
+  #aboutus details > ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    border: 0.1px solid beige;
+    border-radius: 5px;
+    width: 40%;
+    animation: fadeIn 1s;
+    top: 9vh;
+    right: 2vh;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
   #aboutus .ourservices {
     background-color: whitesmoke;
@@ -468,19 +483,20 @@
     flex-direction: column;
     background-color: black;
     color: white;
-    height: 155vh;
+    height: 160vh;
+    align-items: center;
+    justify-content: center;
   }
   #aboutus footer h3 {
     font-size: 22px;
     font-weight: 200;
-    padding-bottom: 2vh;
   }
   #aboutus footer article {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding-top: 5vh;
+    row-gap: 3vh;
   }
   #aboutus footer article ul li {
     list-style-type: none;
@@ -489,9 +505,16 @@
   #aboutus footer article ul li a {
     color: white;
   }
+  #aboutus footer .firstfooter > article > h3 {
+    font-size: 21px;
+    font-weight: 200;
+    color: #ffcf40;
+    text-decoration: underline;
+  }
   #aboutus footer span {
     color: #53a8b6;
     text-decoration: underline;
+    font-size: 17px;
   }
   #aboutus footer .instaP {
     color: rgba(255, 255, 255, 0.301);
@@ -499,6 +522,24 @@
     padding-bottom: 1vh;
   }
   #aboutus footer .instagram {
+    font-size: 40px;
+  }
+  #aboutus footer .facebook {
+    font-size: 40px;
+    color: blue;
+  }
+  #aboutus footer .firstfooter {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  #aboutus footer .firstfooter > article:nth-child(4) {
+    display: flex;
+    align-items: center;
+    width: 60%;
+  }
+  #aboutus footer .firstfooter > article:nth-child(4) div > a {
+    color: blue;
     font-size: 40px;
   }
   #aboutus footer .mylinks {
@@ -511,6 +552,14 @@
     font-size: 25px;
     color: blue;
   }
+  #aboutus footer .secondfooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 5vh;
+    color: rgba(255, 255, 255, 0.301);
+  }
 }
 @media (min-width: 200px) {
   #ourgallery body {
@@ -518,7 +567,7 @@
   }
   #ourgallery header {
     background-image: url(/images/bgheader1.jpg);
-    background-position: center;
+    background-position-y: 40%;
     background-repeat: no-repeat;
     background-size: cover;
     height: 70vh;
@@ -557,6 +606,7 @@
     padding-top: 5px;
     text-align: center;
     display: flex;
+    align-items: center;
     justify-content: center;
   }
   #ourgallery header nav li a {
@@ -673,6 +723,7 @@
     color: white;
     height: 160vh;
     align-items: center;
+    justify-content: center;
   }
   #ourgallery footer h3 {
     font-size: 22px;
@@ -683,6 +734,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    row-gap: 3vh;
   }
   #ourgallery footer article ul li {
     list-style-type: none;
@@ -690,6 +742,12 @@
   }
   #ourgallery footer article ul li a {
     color: white;
+  }
+  #ourgallery footer .firstfooter > article > h3 {
+    font-size: 21px;
+    font-weight: 200;
+    color: #ffcf40;
+    text-decoration: underline;
   }
   #ourgallery footer span {
     color: #53a8b6;
@@ -744,7 +802,7 @@
 @media (min-width: 200px) {
   #services header {
     background-image: url(/images/bgheader1.jpg);
-    background-position: center;
+    background-position-y: 40%;
     background-repeat: no-repeat;
     background-size: cover;
     height: 70vh;
@@ -803,6 +861,7 @@
     text-align: center;
     display: flex;
     justify-content: center;
+    align-items: center;
   }
   #services header nav li a {
     text-decoration: none;
@@ -828,11 +887,19 @@
     padding-bottom: 8vh;
     height: 205vh;
   }
+  #services main blockquote {
+    font-style: oblique;
+    font-weight: 700;
+  }
   #services main .pageservice {
     display: flex;
     flex-direction: column;
     row-gap: 3vh;
     width: 90%;
+    align-items: center;
+  }
+  #services main .pageservice > article > h1 {
+    font-size: 21px;
   }
   #services main .pageservice article {
     display: flex;
@@ -856,19 +923,20 @@
     flex-direction: column;
     background-color: black;
     color: white;
-    height: 155vh;
+    height: 160vh;
+    align-items: center;
+    justify-content: center;
   }
   #services footer h3 {
     font-size: 22px;
     font-weight: 200;
-    padding-bottom: 2vh;
   }
   #services footer article {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding-top: 5vh;
+    row-gap: 3vh;
   }
   #services footer article ul li {
     list-style-type: none;
@@ -877,9 +945,16 @@
   #services footer article ul li a {
     color: white;
   }
+  #services footer .firstfooter > article > h3 {
+    font-size: 21px;
+    font-weight: 200;
+    color: #ffcf40;
+    text-decoration: underline;
+  }
   #services footer span {
     color: #53a8b6;
     text-decoration: underline;
+    font-size: 17px;
   }
   #services footer .instaP {
     color: rgba(255, 255, 255, 0.301);
@@ -887,6 +962,24 @@
     padding-bottom: 1vh;
   }
   #services footer .instagram {
+    font-size: 40px;
+  }
+  #services footer .facebook {
+    font-size: 40px;
+    color: blue;
+  }
+  #services footer .firstfooter {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  #services footer .firstfooter > article:nth-child(4) {
+    display: flex;
+    align-items: center;
+    width: 60%;
+  }
+  #services footer .firstfooter > article:nth-child(4) div > a {
+    color: blue;
     font-size: 40px;
   }
   #services footer .mylinks {
@@ -899,6 +992,14 @@
     font-size: 25px;
     color: blue;
   }
+  #services footer .secondfooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 5vh;
+    color: rgba(255, 255, 255, 0.301);
+  }
 }
 @media (min-width: 200px) {
   #contactform {
@@ -906,7 +1007,7 @@
   }
   #contactform header {
     background-image: url(/images/bgheader1.jpg);
-    background-position: center;
+    background-position-y: 40%;
     background-repeat: no-repeat;
     background-size: cover;
     height: 70vh;
@@ -964,6 +1065,7 @@
     padding-top: 5px;
     text-align: center;
     display: flex;
+    align-items: center;
     justify-content: center;
   }
   #contactform header nav li a {
@@ -1088,19 +1190,20 @@
     flex-direction: column;
     background-color: black;
     color: white;
-    height: 155vh;
+    height: 160vh;
+    align-items: center;
+    justify-content: center;
   }
   #contactform footer h3 {
     font-size: 22px;
     font-weight: 200;
-    padding-bottom: 2vh;
   }
   #contactform footer article {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding-top: 5vh;
+    row-gap: 3vh;
   }
   #contactform footer article ul li {
     list-style-type: none;
@@ -1109,9 +1212,16 @@
   #contactform footer article ul li a {
     color: white;
   }
+  #contactform footer .firstfooter > article > h3 {
+    font-size: 21px;
+    font-weight: 200;
+    color: #ffcf40;
+    text-decoration: underline;
+  }
   #contactform footer span {
     color: #53a8b6;
     text-decoration: underline;
+    font-size: 17px;
   }
   #contactform footer .instaP {
     color: rgba(255, 255, 255, 0.301);
@@ -1119,6 +1229,24 @@
     padding-bottom: 1vh;
   }
   #contactform footer .instagram {
+    font-size: 40px;
+  }
+  #contactform footer .facebook {
+    font-size: 40px;
+    color: blue;
+  }
+  #contactform footer .firstfooter {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  #contactform footer .firstfooter > article:nth-child(4) {
+    display: flex;
+    align-items: center;
+    width: 60%;
+  }
+  #contactform footer .firstfooter > article:nth-child(4) div > a {
+    color: blue;
     font-size: 40px;
   }
   #contactform footer .mylinks {
@@ -1131,6 +1259,14 @@
     font-size: 25px;
     color: blue;
   }
+  #contactform footer .secondfooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 5vh;
+    color: rgba(255, 255, 255, 0.301);
+  }
 }
 @media (min-width: 600px) {
   #aboutus header {
@@ -1141,6 +1277,29 @@
   }
   #aboutus header nav > details > ul {
     width: 20%;
+  }
+  #aboutus .ourservices {
+    row-gap: 7vh;
+  }
+  #aboutus .ourservices article > p {
+    width: 80%;
+  }
+  #aboutus footer {
+    padding-top: 3vh;
+    height: 135vh;
+  }
+  #aboutus footer .firstfooter {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+  }
+  #aboutus footer article:nth-child(4) {
+    width: 17%;
+  }
+  #aboutus footer article:nth-child(4) > aside {
+    display: flex;
+    -moz-column-gap: 3vh;
+         column-gap: 3vh;
   }
 }
 @media (min-width: 600px) {
@@ -1166,31 +1325,35 @@
     width: 30%;
   }
   #index .softwash {
-    height: 100vh;
+    height: 110vh;
   }
-  #index .overlay {
-    height: 100vh;
+  #index .softwash .overlay {
+    height: 110vh;
+    row-gap: 5vh;
+  }
+  #index .slideshow {
+    height: 135vh;
+  }
+  #index .services {
+    height: 120vh;
+    row-gap: 5vh;
+  }
+  #index .services h1 {
+    padding-top: 1vh;
   }
   #index footer {
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    row-gap: 13vh;
+    padding-top: 3vh;
+    height: 135vh;
   }
   #index footer .firstfooter {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    justify-content: center;
-    -moz-column-gap: 7vh;
-         column-gap: 7vh;
-    align-items: baseline;
-    margin-top: 4vh;
+    flex-direction: column;
+    row-gap: 3vh;
   }
-  #index footer .firstfooter article:nth-child(4) {
+  #index footer article:nth-child(4) {
     width: 17%;
   }
-  #index footer .firstfooter article:nth-child(4) > aside {
+  #index footer article:nth-child(4) > aside {
     display: flex;
     -moz-column-gap: 3vh;
          column-gap: 3vh;
@@ -1286,10 +1449,10 @@
     flex-direction: column;
     row-gap: 3vh;
   }
-  #ourgallery article:nth-child(4) {
+  #ourgallery footer article:nth-child(4) {
     width: 17%;
   }
-  #ourgallery article:nth-child(4) > aside {
+  #ourgallery footer article:nth-child(4) > aside {
     display: flex;
     -moz-column-gap: 3vh;
          column-gap: 3vh;
@@ -1305,13 +1468,19 @@
   #services header nav > details > ul {
     width: 20%;
   }
+  #services main {
+    height: 150vh;
+  }
+  #services main blockquote {
+    width: 70%;
+    text-align: center;
+  }
 }
 @media (min-width: 1000px) {
   #index header {
     display: flex;
-    justify-content: space-between;
-    row-gap: 10vh;
-    height: 80vh;
+    height: 105vh;
+    background-position-y: 40%;
   }
   #index header > nav > ul {
     display: flex;
@@ -1327,8 +1496,60 @@
   #index header nav > ul > li a {
     font-size: 27px;
   }
+  #index header nav > ul > li a:hover {
+    background-color: rgba(0, 0, 255, 0.146);
+    padding: 5%;
+    border-radius: 10px;
+    transition: all 0.7s;
+  }
   #index details {
     display: none;
+  }
+  #index .about {
+    flex-direction: row;
+    height: 98vh;
+  }
+  #index .about article i {
+    font-size: 110px;
+    row-gap: 7vh;
+  }
+  #index .about article h4 {
+    font-size: 35px;
+  }
+  #index .about article p {
+    font-size: 22px;
+    font-weight: 500;
+  }
+  #index .about article a {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 2vh 15vh;
+  }
+  #index .about article a:hover {
+    background-color: black;
+    color: #ffcf40;
+    transition: 0.5s ease-in-out;
+  }
+  #index .softwash .overlay h1 {
+    font-size: 40px;
+  }
+  #index .softwash .overlay h3 {
+    font-size: 30px;
+  }
+  #index .softwash .overlay p {
+    font-size: 20px;
+  }
+  #index .slideshow {
+    row-gap: 7vh;
+  }
+  #index .slideshow p {
+    width: 60%;
+  }
+  #index .services > article {
+    width: 50%;
+    height: 20vh;
+    padding: 3vh;
   }
   #index footer {
     height: 60vh;
@@ -1358,7 +1579,7 @@
 @media (min-width: 1000px) {
   #services header {
     display: flex;
-    justify-content: space-between;
+    background-position-y: 32%;
   }
   #services header > nav > ul {
     display: flex;
@@ -1374,14 +1595,61 @@
   #services header nav > ul > li a {
     font-size: 27px;
   }
+  #services header nav > ul > li a:hover {
+    background-color: rgba(0, 0, 255, 0.146);
+    padding: 5%;
+    border-radius: 10px;
+    transition: all 0.7s;
+  }
   #services details {
     display: none;
+  }
+  #services main {
+    height: 160vh;
+  }
+  #services main .pageservice > article p {
+    width: 60%;
+    font-size: 18px;
+  }
+  #services main .pageservice > article {
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+  }
+  #services main .pageservice > article:nth-child(odd) {
+    background-color: rgba(0, 128, 0, 0.397);
+  }
+  #services main h1 {
+    font-size: 30px;
+  }
+  #services footer {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 13vh;
+  }
+  #services footer .firstfooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-content: center;
+    -moz-column-gap: 7vh;
+         column-gap: 7vh;
+    align-items: baseline;
+    margin-top: 4vh;
+  }
+  #services footer .firstfooter article:nth-child(4) {
+    width: 17%;
+  }
+  #services footer .firstfooter article:nth-child(4) > aside {
+    display: flex;
+    -moz-column-gap: 3vh;
+         column-gap: 3vh;
   }
 }
 @media (min-width: 1000px) {
   #aboutus header {
     display: flex;
-    justify-content: space-between;
+    background-position-y: 32%;
   }
   #aboutus header > nav > ul {
     display: flex;
@@ -1397,14 +1665,50 @@
   #aboutus header nav > ul > li a {
     font-size: 27px;
   }
+  #aboutus header nav > ul > li a:hover {
+    background-color: rgba(0, 0, 255, 0.146);
+    padding: 5%;
+    border-radius: 10px;
+    transition: all 0.7s;
+  }
   #aboutus details {
     display: none;
+  }
+  #aboutus .ourservices > article {
+    width: 60%;
+  }
+  #aboutus .ourservices > article h1 {
+    font-size: 30px;
+  }
+  #aboutus footer {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 13vh;
+  }
+  #aboutus footer .firstfooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-content: center;
+    -moz-column-gap: 7vh;
+         column-gap: 7vh;
+    align-items: baseline;
+    margin-top: 4vh;
+  }
+  #aboutus footer .firstfooter article:nth-child(4) {
+    width: 17%;
+  }
+  #aboutus footer .firstfooter article:nth-child(4) > aside {
+    display: flex;
+    -moz-column-gap: 3vh;
+         column-gap: 3vh;
   }
 }
 @media (min-width: 1000px) {
   #contactform header {
     display: flex;
-    justify-content: space-between;
+    background-position-y: 32%;
   }
   #contactform header > nav > ul {
     display: flex;
@@ -1420,6 +1724,12 @@
   #contactform header nav > ul > li a {
     font-size: 27px;
   }
+  #contactform header nav > ul > li a:hover {
+    background-color: rgba(0, 0, 255, 0.146);
+    padding: 5%;
+    border-radius: 10px;
+    transition: all 0.7s;
+  }
   #contactform details {
     display: none;
   }
@@ -1427,7 +1737,7 @@
 @media (min-width: 1000px) {
   #ourgallery header {
     display: flex;
-    justify-content: space-between;
+    background-position-y: 32%;
   }
   #ourgallery header > nav > ul {
     display: flex;
@@ -1442,6 +1752,12 @@
   }
   #ourgallery header nav > ul > li a {
     font-size: 27px;
+  }
+  #ourgallery header nav > ul > li a:hover {
+    background-color: rgba(0, 0, 255, 0.146);
+    padding: 5%;
+    border-radius: 10px;
+    transition: all 0.7s;
   }
   #ourgallery details {
     display: none;

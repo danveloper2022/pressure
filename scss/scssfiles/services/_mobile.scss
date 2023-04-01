@@ -4,7 +4,7 @@
   #services{
         header {
             background-image: url(/images/bgheader1.jpg);
-            background-position: center;
+            background-position-y: 40%;
             background-repeat: no-repeat;
             background-size: cover;
             height: 70vh;
@@ -64,6 +64,7 @@
               text-align: center;
               display: flex;
               justify-content: center;
+              align-items: center;
               a { 
               text-decoration: none;
               color: beige;
@@ -91,10 +92,20 @@
         row-gap: 8vh;
         padding-bottom: 8vh;
         height: 205vh;
+
+    blockquote {
+      font-style: oblique;
+      font-weight: 700
+    }
     
     .pageservice {
         @include displayFlex;
         width: 90%;
+        align-items: center;
+
+    > article > h1 {
+      font-size: 21px
+    }
 
         article {
             @include displayFlex;
@@ -116,48 +127,79 @@
     // FOOTER SECTION
 
  
- footer {
-    display: flex;
-    flex-direction: column;
-    background-color: black;
-    color: white;
-    height: 155vh;
-    
-    h3 {
-      font-size: 22px;
-      font-weight: 200;
-      padding-bottom: 2vh;
-    }
-    
-    article {
+    footer {
       display: flex;
       flex-direction: column;
+      background-color: black;
+      color: white;
+      height: 160vh;
       align-items: center;
-      text-align: center;
-      padding-top: 5vh;
-      ul{
-        li {
-          list-style-type: none;
-          line-height: 25px;
-          a {
-            color: white;
+      justify-content: center;
+      
+      
+      h3 {
+        font-size: 22px;
+        font-weight: 200;
+      }
+      
+      article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        row-gap: 3vh;
+        ul{
+          li {
+            list-style-type: none;
+            line-height: 25px;
+            a {
+              color: white;
+            }
           }
         }
       }
-    }
-    span {
-      color:#53a8b6 ;
-      text-decoration: underline;
-    }
-    .instaP {
-      color: rgba(255, 255, 255, 0.301);
-      width: 80%;
-      padding-bottom: 1vh;
-    }
-    .instagram{
-      font-size: 40px;
-    }
+      .firstfooter > article > h3 {
+        font-size: 21px;
+        font-weight: 200;
+        color: #ffcf40 ;
+        text-decoration: underline;
+      }
+      span {
+        color:#53a8b6 ;
+        text-decoration: underline;
+        font-size: 17px;
+      }
+      .instaP {
+        color: rgba(255, 255, 255, 0.301);
+        width: 80%;
+        padding-bottom: 1vh;
+      }
+
     
+
+      .instagram {
+        font-size: 40px;
+      }
+      .facebook {
+        font-size: 40px;
+        color: blue;
+      }
+    .firstfooter {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+     
+    .firstfooter > article:nth-child(4){
+      display: flex;
+      align-items: center;
+      width: 60%;
+      div > a {
+        color: blue;
+        font-size: 40px;
+      }
+    }
+
     .mylinks {
       display: flex;
       column-gap: 1vh;
@@ -166,8 +208,19 @@
         font-size: 25px;
         color: blue;
       }
+    } 
+    
+    .secondfooter {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding-top: 5vh;
+      color:  rgba(255, 255, 255, 0.301);
+      
+        
     }
-}
+    }
   }    
     
 }       

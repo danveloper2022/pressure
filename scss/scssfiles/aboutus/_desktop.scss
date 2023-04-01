@@ -2,31 +2,76 @@
 
 @media (min-width: 1000px){
 #aboutus { 
-header{
-        display: flex;
-        justify-content: space-between;
-      
-        
-        > nav > ul {
-          display: flex;
-          justify-content: space-around;
-          width: 60%;
-        } 
-      
-        nav > ul > li{
-          width: 100%;
-          height: 30px;
-          background: none;
-          border-bottom: none;
-      
-          a {
-            font-size: 27px;
-          }
-        }
+  header{
+    display: flex;
+    background-position-y: 32%;
+  
+    
+    > nav > ul {
+      display: flex;
+      justify-content: space-around;
+      width: 60%;
+    } 
+  
+    nav > ul > li{
+      width: 100%;
+      height: 30px;
+      background: none;
+      border-bottom: none;
+  
+      a {
+        font-size: 27px;
       }
-      
-      details{
-          display: none;
-        }
+      a:hover {
+        background-color: rgba(0, 0, 255, 0.146);
+        padding: 5%;
+        border-radius: 10px;
+        transition: all .7s;
+      }
+    }
+  }
+  
+  details{
+      display: none;
+    }
+  
+
+
+.ourservices {
+> article {
+  width: 60%;
+
+  h1 {
+    font-size: 30px;
+  }
+}
+
+}
+footer{
+  height:60vh;
+  display: flex;
+  flex-direction: column;
+  row-gap: 13vh;
+  
+  .firstfooter { 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  justify-content: center;
+  column-gap: 7vh;
+  align-items: baseline;
+  margin-top: 4vh;
+  
+
+  article:nth-child(4){
+    width: 17%;
+    
+    > aside {
+      display: flex;
+      column-gap: 3vh;
+    }
+  }
+}
+}
 }
 }

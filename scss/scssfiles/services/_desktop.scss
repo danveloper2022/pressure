@@ -1,8 +1,8 @@
 @media (min-width: 1000px) {
   #services { 
-  header{
+header{
         display: flex;
-        justify-content: space-between;
+        background-position-y: 32%;
       
         
         > nav > ul {
@@ -20,11 +20,69 @@
           a {
             font-size: 27px;
           }
+          a:hover {
+            background-color: rgba(0, 0, 255, 0.146);
+            padding: 5%;
+            border-radius: 10px;
+            transition: all .7s;
+          }
         }
       }
       
       details{
           display: none;
         }
+
+main {
+  height: 160vh;
+
+.pageservice > article {
+  p {
+    width: 60%;
+    font-size: 18px;
+  }
+}
+.pageservice > article {
+  padding-top: 3vh ;
+  padding-bottom: 3vh;
+}
+
+.pageservice > article:nth-child(odd){
+  background-color: rgba(0, 128, 0, 0.397);
+  
+}
+
+  h1 {
+    font-size: 30px;
+  }
+}
+footer{
+  height:60vh;
+  display: flex;
+  flex-direction: column;
+  row-gap: 13vh;
+  
+  .firstfooter { 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  justify-content: center;
+  column-gap: 7vh;
+  align-items: baseline;
+  margin-top: 4vh;
+  
+
+  article:nth-child(4){
+    width: 17%;
+    
+    > aside {
+      display: flex;
+      column-gap: 3vh;
+    }
+  }
+}
+
 }
 } 
+
+}

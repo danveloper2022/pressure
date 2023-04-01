@@ -18,38 +18,47 @@
 
     // SOFTWASH SECTION
 .softwash {
-  height: 100vh;
+  height: 110vh;
+ 
 }
 
+
+.softwash { 
 .overlay {
-  height: 100vh;
+  height: 110vh;
+  row-gap: 5vh;
 }
-    footer{
-        height:60vh;
-        display: flex;
-        flex-direction: column;
-        row-gap: 13vh;
-        
-        .firstfooter { 
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        justify-content: center;
-        column-gap: 7vh;
-        align-items: baseline;
-        margin-top: 4vh;
-        
-    
-        article:nth-child(4){
-          width: 17%;
-          
-          > aside {
-            display: flex;
-            column-gap: 3vh;
-          }
-        }
-      }
-      }
+}
+
+.slideshow {
+  height: 135vh;
+}
+
+.services {
+  height: 120vh;
+  row-gap: 5vh;
+  h1 {
+    padding-top: 1vh;
+  }
+}
+footer {
+  padding-top: 3vh;
+  height: 135vh;
+  .firstfooter {
+    @include displayFlex
+  }
+
+
+article:nth-child(4){
+  width: 17%;
+  
+  > aside {
+    display: flex;
+    column-gap: 3vh;
+  }
+}
+  
+}
 }
 
 }

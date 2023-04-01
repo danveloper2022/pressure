@@ -4,7 +4,7 @@
 #contactform {
       header {
         background-image: url(/images/bgheader1.jpg);
-        background-position: center;
+        background-position-y: 40%;
         background-repeat: no-repeat;
         background-size: cover;
         height: 70vh;
@@ -63,6 +63,7 @@
           padding-top: 5px;
           text-align: center;
           display: flex;
+          align-items: center;
           justify-content: center;
           a { 
           text-decoration: none;
@@ -186,17 +187,19 @@ button:hover{background:#78788c;
 
 // FOOTER SECTION
 
- footer {
+footer {
   display: flex;
   flex-direction: column;
   background-color: black;
   color: white;
-  height: 155vh;
+  height: 160vh;
+  align-items: center;
+  justify-content: center;
+  
   
   h3 {
     font-size: 22px;
     font-weight: 200;
-    padding-bottom: 2vh;
   }
   
   article {
@@ -204,7 +207,7 @@ button:hover{background:#78788c;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding-top: 5vh;
+    row-gap: 3vh;
     ul{
       li {
         list-style-type: none;
@@ -215,29 +218,69 @@ button:hover{background:#78788c;
       }
     }
   }
+  .firstfooter > article > h3 {
+    font-size: 21px;
+    font-weight: 200;
+    color: #ffcf40 ;
+    text-decoration: underline;
+  }
   span {
     color:#53a8b6 ;
     text-decoration: underline;
+    font-size: 17px;
   }
   .instaP {
     color: rgba(255, 255, 255, 0.301);
     width: 80%;
     padding-bottom: 1vh;
   }
-  .instagram{
+
+
+
+  .instagram {
     font-size: 40px;
   }
-  
-  .mylinks {
-    display: flex;
-    column-gap: 1vh;
-    line-height: 35px;
-    i {
-      font-size: 25px;
-      color: blue;
-    }
+  .facebook {
+    font-size: 40px;
+    color: blue;
   }
-    }
+.firstfooter {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.firstfooter > article:nth-child(4){
+  display: flex;
+  align-items: center;
+  width: 60%;
+  div > a {
+    color: blue;
+    font-size: 40px;
+  }
+}
+
+.mylinks {
+  display: flex;
+  column-gap: 1vh;
+  line-height: 35px;
+  i {
+    font-size: 25px;
+    color: blue;
+  }
+} 
+
+.secondfooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 5vh;
+  color:  rgba(255, 255, 255, 0.301);
+  
+    
+}
+}
 }
 }
 

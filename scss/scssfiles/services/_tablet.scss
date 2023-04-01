@@ -3,18 +3,28 @@
 @media(min-width:600px){
     #services{
        
-            header{
+header{
           
-            row-gap: 20vh;
+row-gap: 20vh;
           
-              nav > h2 > a {
-                font-size:32px;
-              }
+  nav > h2 > a {
+font-size:32px;
+  }
           
-              nav > details > ul  {
-                width: 20%;
-              }
-            }
+  nav > details > ul  {
+width: 20%;
+  }
+}
+main{
+  height: 150vh;
+  
+  blockquote {
+    width: 70%;
+    text-align: center;
+   
+  }
+ 
+}
           
-    }
+}
 }
