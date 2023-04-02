@@ -1,6 +1,6 @@
 // TABLET GALLERY FILE
 
-@media(min-width: 600px){
+@media (orientation: portrait ),(min-width: 600px){
 
 #ourgallery{ 
   header{
@@ -117,6 +117,20 @@ article:nth-child(4){
   }
 }
   
+}
+
+@media (orientation:landscape){
+  header {
+    height: 90vh;
+  }
+
+  main {
+    height: 210vh;
+  }
+
+  footer {
+    height: 220vh;
+  }
 }
 }
    

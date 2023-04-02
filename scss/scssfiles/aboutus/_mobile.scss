@@ -1,6 +1,6 @@
 // ABOUT US MOBILE FILE
 
-@media (min-width: 200px){
+@media (orientation: portrait ), (min-width: 200px){
 #aboutus { 
   header {
     background-image: url(/images/bgheader1.jpg);
@@ -11,14 +11,14 @@
     padding: 2vh;
     display: flex;
     flex-direction: column;
-    row-gap: 30vh;
+    row-gap: 20vh;
     border-radius: 0px 0px 20px 20px;
 
     article {
       display: flex;
       flex-direction: column;
       align-items: center;
-      row-gap: 10vh;
+      row-gap: 1vh;
     }
     
     h2 {
@@ -45,7 +45,7 @@
       justify-content: center;
       a { 
       text-decoration: none;
-      color: #55B4B0;
+      color: beige;
       padding: 1%;
       font-size: 20px;
       width: 100%;
@@ -55,7 +55,7 @@
           display: none;
       }
     summary {
-      color: beige;
+      color: #55B4B0;
       font-size: 23px;
       padding-top: 1vh;
     }
@@ -120,7 +120,7 @@ details {
       flex-direction: column;
       background-color: black;
       color: white;
-      height: 160vh;
+      height: 145vh;
       align-items: center;
       justify-content: center;
       
@@ -210,6 +210,19 @@ details {
     }
     }
           
-        
+@media (orientation:landscape){
+
+header {
+      height: 80vh;
+      row-gap: 24vh;
+    }
+main {
+  height: 140vh;
+}
+  
+footer {
+      height: 220vh;
+    }
+  }    
   }       
 } 

@@ -1,6 +1,6 @@
 // INDEX MOBILE FILE
 
-@media (min-width: 200px) {
+@media (orientation: portrait),(min-width: 200px) {
 #index {
   header {
     background-image: url(/images/bgheader1.jpg);
@@ -63,7 +63,7 @@
           display: none;
       }
     summary {
-      color: beige;
+      color: #55B4B0;
       font-size: 23px;
       padding-top: 1vh;
     }
@@ -404,6 +404,28 @@ footer {
     
 }
 }
+@media (orientation:landscape){
+
+header {
+  height: 185vh;
+  row-gap: 33vh;
+}
+
+.about {
+  height: 180vh;
+}
+ 
+.slideshow {
+  height: 168vh;
+}
+.services {
+  height: 165vh;
+}
+
+footer {
+    height: 220vh;
+  }
+} 
   
 }
 }

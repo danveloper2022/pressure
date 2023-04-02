@@ -1,6 +1,6 @@
 // TABLET INDEX FILE
 
-@media (min-width: 600px){
+@media (orientation: portrait ),(min-width: 600px){
 #index{
 
   header{
@@ -59,6 +59,28 @@ article:nth-child(4){
 }
   
 }
+
+@media (orientation:landscape){ 
+  header {
+    height: 150vh;
+  }
+  .softwash {
+    height: 130vh;
+  }
+  .overlay {
+    height: 130vh;
+  }
+  .slideshow {
+    height: 200vh;
+  }
+  .services {
+    height: 170vh;
+  }
+  footer{
+    height: 220vh;
+  }
+}
+
 }
 
 }

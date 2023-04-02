@@ -9,7 +9,7 @@
   height: 3px;
 }
 
-@media (min-width: 200px) {
+@media (orientation: portrait), (min-width: 200px) {
   #index header {
     background-image: url(/images/bgheader1.jpg);
     background-position: center;
@@ -36,7 +36,6 @@
   }
   #index header h2 a {
     color: #55B4B0;
-    text-shadow: 2px 1px beige;
     letter-spacing: 1px;
     text-decoration: none;
     font-size: 24px;
@@ -71,7 +70,7 @@
     display: none;
   }
   #index header nav summary {
-    color: beige;
+    color: #55B4B0;
     font-size: 23px;
     padding-top: 1vh;
   }
@@ -245,12 +244,12 @@
     }
   }
 }
-@media only screen and (min-width: 200px) and (max-width: 300px) {
+@media only screen and (orientation: portrait) and (max-width: 300px), only screen and (min-width: 200px) and (max-width: 300px) {
   #index .slideshow .text {
     font-size: 11px;
   }
 }
-@media (min-width: 200px) {
+@media (orientation: portrait), (min-width: 200px) {
   #index .services {
     height: 133vh;
     background-image: url(/images/bglastpart.jpg);
@@ -290,7 +289,7 @@
     font-size: 20px;
   }
 }
-@media (min-width: 200px) {
+@media (orientation: portrait), (min-width: 200px) {
   #index footer {
     display: flex;
     flex-direction: column;
@@ -374,7 +373,25 @@
     color: rgba(255, 255, 255, 0.301);
   }
 }
-@media (min-width: 200px) {
+@media (orientation: portrait) and (orientation: landscape), (min-width: 200px) and (orientation: landscape) {
+  #index header {
+    height: 185vh;
+    row-gap: 33vh;
+  }
+  #index .about {
+    height: 180vh;
+  }
+  #index .slideshow {
+    height: 168vh;
+  }
+  #index .services {
+    height: 165vh;
+  }
+  #index footer {
+    height: 220vh;
+  }
+}
+@media (orientation: portrait), (min-width: 200px) {
   #aboutus header {
     background-image: url(/images/bgheader1.jpg);
     background-position-y: 40%;
@@ -384,18 +401,17 @@
     padding: 2vh;
     display: flex;
     flex-direction: column;
-    row-gap: 30vh;
+    row-gap: 20vh;
     border-radius: 0px 0px 20px 20px;
   }
   #aboutus header article {
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 10vh;
+    row-gap: 1vh;
   }
   #aboutus header h2 a {
     color: #55B4B0;
-    text-shadow: 2px 1px beige;
     letter-spacing: 1px;
     text-decoration: none;
     font-size: 24px;
@@ -421,7 +437,7 @@
   }
   #aboutus header nav li a {
     text-decoration: none;
-    color: #55B4B0;
+    color: beige;
     padding: 1%;
     font-size: 20px;
     width: 100%;
@@ -430,7 +446,7 @@
     display: none;
   }
   #aboutus header nav summary {
-    color: beige;
+    color: #55B4B0;
     font-size: 23px;
     padding-top: 1vh;
   }
@@ -483,7 +499,7 @@
     flex-direction: column;
     background-color: black;
     color: white;
-    height: 160vh;
+    height: 145vh;
     align-items: center;
     justify-content: center;
   }
@@ -561,7 +577,19 @@
     color: rgba(255, 255, 255, 0.301);
   }
 }
-@media (min-width: 200px) {
+@media (orientation: portrait) and (orientation: landscape), (min-width: 200px) and (orientation: landscape) {
+  #aboutus header {
+    height: 80vh;
+    row-gap: 24vh;
+  }
+  #aboutus main {
+    height: 140vh;
+  }
+  #aboutus footer {
+    height: 220vh;
+  }
+}
+@media (orientation: portrait), (min-width: 200px) {
   #ourgallery body {
     background-color: #eef2e2;
   }
@@ -574,18 +602,17 @@
     padding: 2vh;
     display: flex;
     flex-direction: column;
-    row-gap: 30vh;
+    row-gap: 20vh;
     border-radius: 0px 0px 20px 20px;
   }
   #ourgallery header article {
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 10vh;
+    row-gap: 1vh;
   }
   #ourgallery header h2 a {
     color: #55B4B0;
-    text-shadow: 2px 1px beige;
     letter-spacing: 1px;
     text-decoration: none;
     font-size: 24px;
@@ -611,7 +638,7 @@
   }
   #ourgallery header nav li a {
     text-decoration: none;
-    color: #55B4B0;
+    color: beige;
     padding: 1%;
     font-size: 20px;
     width: 100%;
@@ -620,7 +647,7 @@
     display: none;
   }
   #ourgallery header nav summary {
-    color: beige;
+    color: #55B4B0;
     font-size: 23px;
     padding-top: 1vh;
   }
@@ -799,7 +826,27 @@
     color: rgba(255, 255, 255, 0.301);
   }
 }
-@media (min-width: 200px) {
+@media (orientation: portrait) and (orientation: landscape), (min-width: 200px) and (orientation: landscape) {
+  #ourgallery header {
+    height: 80vh;
+    row-gap: 24vh;
+  }
+  #ourgallery footer {
+    height: 220vh;
+  }
+}
+@media (orientation: portrait) and (orientation: landscape), (min-width: 200px) and (orientation: landscape) {
+  #ourgallery header {
+    height: 90vh;
+  }
+  #ourgallery main {
+    height: 220vh;
+  }
+  #ourgallery footer {
+    height: 220vh;
+  }
+}
+@media (orientation: portrait), (min-width: 200px) {
   #services header {
     background-image: url(/images/bgheader1.jpg);
     background-position-y: 40%;
@@ -809,18 +856,17 @@
     padding: 2vh;
     display: flex;
     flex-direction: column;
-    row-gap: 30vh;
+    row-gap: 20vh;
     border-radius: 0px 0px 20px 20px;
   }
   #services header article {
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 10vh;
+    row-gap: 1vh;
   }
   #services header h2 a {
     color: #55B4B0;
-    text-shadow: 2px 1px beige;
     letter-spacing: 1px;
     text-decoration: none;
     font-size: 24px;
@@ -834,7 +880,35 @@
     display: flex;
     justify-content: space-between;
   }
-  #services header nav > details > ul {
+  #services header nav li {
+    list-style-type: none;
+    background-color: rgba(0, 0, 255, 0.08);
+    border-bottom: 0.5px solid white;
+    padding-top: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #services header nav li a {
+    text-decoration: none;
+    color: beige;
+    padding: 1%;
+    font-size: 20px;
+    width: 100%;
+  }
+  #services header nav > ul {
+    display: none;
+  }
+  #services header nav summary {
+    color: #55B4B0;
+    font-size: 23px;
+    padding-top: 1vh;
+  }
+  #services details summary::-webkit-details-marker {
+    display: none;
+  }
+  #services details > ul {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -853,31 +927,6 @@
       opacity: 1;
     }
   }
-  #services header nav li {
-    list-style-type: none;
-    background-color: rgba(0, 0, 255, 0.08);
-    border-bottom: 0.5px solid white;
-    padding-top: 5px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  #services header nav li a {
-    text-decoration: none;
-    color: #55B4B0;
-    padding: 1%;
-    font-size: 20px;
-    width: 100%;
-  }
-  #services header nav > ul {
-    display: none;
-  }
-  #services header nav summary {
-    color: beige;
-    font-size: 23px;
-    padding-top: 1vh;
-  }
   #services main {
     display: flex;
     flex-direction: column;
@@ -885,7 +934,7 @@
     align-items: center;
     row-gap: 8vh;
     padding-bottom: 8vh;
-    height: 205vh;
+    height: 185vh;
   }
   #services main blockquote {
     font-style: oblique;
@@ -1001,10 +1050,19 @@
     color: rgba(255, 255, 255, 0.301);
   }
 }
-@media (min-width: 200px) {
-  #contactform {
-    /* animation properties */
+@media (orientation: portrait) and (orientation: landscape), (min-width: 200px) and (orientation: landscape) {
+  #services header {
+    height: 80vh;
+    row-gap: 24vh;
   }
+  #services main {
+    height: 200vh;
+  }
+  #services footer {
+    height: 220vh;
+  }
+}
+@media (orientation: portrait), (min-width: 200px) {
   #contactform body {
     background-color: #eef2e2;
   }
@@ -1017,18 +1075,17 @@
     padding: 2vh;
     display: flex;
     flex-direction: column;
-    row-gap: 30vh;
+    row-gap: 20vh;
     border-radius: 0px 0px 20px 20px;
   }
   #contactform header article {
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 10vh;
+    row-gap: 1vh;
   }
   #contactform header h2 a {
     color: #55B4B0;
-    text-shadow: 2px 1px beige;
     letter-spacing: 1px;
     text-decoration: none;
     font-size: 24px;
@@ -1042,7 +1099,35 @@
     display: flex;
     justify-content: space-between;
   }
-  #contactform header nav > details > ul {
+  #contactform header nav li {
+    list-style-type: none;
+    background-color: rgba(0, 0, 255, 0.08);
+    border-bottom: 0.5px solid white;
+    padding-top: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #contactform header nav li a {
+    text-decoration: none;
+    color: beige;
+    padding: 1%;
+    font-size: 20px;
+    width: 100%;
+  }
+  #contactform header nav > ul {
+    display: none;
+  }
+  #contactform header nav summary {
+    color: #55B4B0;
+    font-size: 23px;
+    padding-top: 1vh;
+  }
+  #contactform details summary::-webkit-details-marker {
+    display: none;
+  }
+  #contactform details > ul {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -1061,31 +1146,6 @@
       opacity: 1;
     }
   }
-  #contactform header nav li {
-    list-style-type: none;
-    background-color: rgba(0, 0, 255, 0.08);
-    border-bottom: 0.5px solid white;
-    padding-top: 5px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  #contactform header nav li a {
-    text-decoration: none;
-    color: #55B4B0;
-    padding: 1%;
-    font-size: 20px;
-    width: 100%;
-  }
-  #contactform header nav > ul {
-    display: none;
-  }
-  #contactform header nav summary {
-    color: beige;
-    font-size: 23px;
-    padding-top: 1vh;
-  }
   #contactform body {
     display: flex;
     flex-direction: column;
@@ -1097,16 +1157,17 @@
     flex-direction: column;
     row-gap: 3vh;
     align-items: center;
-    height: 120vh;
+    height: 130vh;
+    /* animation properties */
   }
   #contactform main h1 {
     padding-top: 7vh;
-    font-size: 52px;
+    font-size: 32px;
     color: #55B4B0;
     text-shadow: 2px 1px beige;
     text-decoration: underline;
   }
-  #contactform .form {
+  #contactform main .form {
     width: 290px;
     height: 440px;
     background: #e6e6e6;
@@ -1119,7 +1180,7 @@
     font-family: "Montserrat", sans-serif;
     position: relative;
   }
-  #contactform input {
+  #contactform main input {
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
@@ -1131,17 +1192,17 @@
     transition: all 0.3s;
     border-bottom: 2px solid #bebed2;
   }
-  #contactform input:focus {
+  #contactform main input:focus {
     border-bottom: 2px solid #78788c;
   }
-  #contactform p:before {
+  #contactform main p:before {
     content: attr(type);
     display: block;
     margin: 28px 0 0;
     font-size: 14px;
     color: #5a5a5a;
   }
-  #contactform button {
+  #contactform main button {
     float: right;
     padding: 8px 12px;
     margin: 8px 0 0;
@@ -1152,11 +1213,11 @@
     cursor: pointer;
     transition: all 0.3s;
   }
-  #contactform button:hover {
+  #contactform main button:hover {
     background: #78788c;
     color: #fff;
   }
-  #contactform #contactdiv {
+  #contactform main #contactdiv {
     position: absolute;
     bottom: -30px;
     right: -5px;
@@ -1169,11 +1230,11 @@
     flex-direction: column;
     row-gap: 1vh;
   }
-  #contactform #contactdiv span {
+  #contactform main #contactdiv span {
     font-size: 10px;
     letter-spacing: 1px;
   }
-  #contactform .form {
+  #contactform main .form {
     animation-name: my-animation;
     animation-duration: 2s;
     animation-direction: alternate;
@@ -1275,7 +1336,22 @@
     color: rgba(255, 255, 255, 0.301);
   }
 }
-@media (min-width: 600px) {
+@media (orientation: portrait) and (orientation: landscape), (min-width: 200px) and (orientation: landscape) {
+  #contactform header {
+    height: 80vh;
+    row-gap: 24vh;
+  }
+  #contactform main {
+    height: 195vh;
+  }
+  #contactform .form {
+    top: 28vh;
+  }
+  #contactform footer {
+    height: 220vh;
+  }
+}
+@media (orientation: portrait), (min-width: 600px) {
   #aboutus header {
     row-gap: 20vh;
   }
@@ -1309,7 +1385,20 @@
          column-gap: 3vh;
   }
 }
-@media (min-width: 600px) {
+@media (orientation: portrait) and (orientation: landscape), (min-width: 600px) and (orientation: landscape) {
+  #aboutus header {
+    height: 90vh;
+  }
+  #aboutus main {
+    height: 160vh;
+    align-items: center;
+    display: flex;
+  }
+  #aboutus footer {
+    height: 220vh;
+  }
+}
+@media (orientation: portrait), (min-width: 600px) {
   #contactform header {
     row-gap: 20vh;
   }
@@ -1337,7 +1426,15 @@
          column-gap: 3vh;
   }
 }
-@media (min-width: 600px) {
+@media (orientation: portrait) and (orientation: landscape), (min-width: 600px) and (orientation: landscape) {
+  #contactform header {
+    height: 90vh;
+  }
+  #contactform footer {
+    height: 220vh;
+  }
+}
+@media (orientation: portrait), (min-width: 600px) {
   #index header {
     height: 120vh;
     row-gap: 20vh;
@@ -1383,7 +1480,27 @@
          column-gap: 3vh;
   }
 }
-@media (min-width: 600px) {
+@media (orientation: portrait) and (orientation: landscape), (min-width: 600px) and (orientation: landscape) {
+  #index header {
+    height: 150vh;
+  }
+  #index .softwash {
+    height: 130vh;
+  }
+  #index .overlay {
+    height: 130vh;
+  }
+  #index .slideshow {
+    height: 200vh;
+  }
+  #index .services {
+    height: 170vh;
+  }
+  #index footer {
+    height: 220vh;
+  }
+}
+@media (orientation: portrait), (min-width: 600px) {
   #ourgallery header {
     row-gap: 20vh;
   }
@@ -1482,7 +1599,18 @@
          column-gap: 3vh;
   }
 }
-@media (min-width: 600px) {
+@media (orientation: portrait) and (orientation: landscape), (min-width: 600px) and (orientation: landscape) {
+  #ourgallery header {
+    height: 90vh;
+  }
+  #ourgallery main {
+    height: 210vh;
+  }
+  #ourgallery footer {
+    height: 220vh;
+  }
+}
+@media (orientation: portrait), (min-width: 600px) {
   #services header {
     row-gap: 20vh;
   }
@@ -1498,6 +1626,17 @@
   #services main blockquote {
     width: 70%;
     text-align: center;
+  }
+}
+@media (orientation: portrait) and (orientation: landscape), (min-width: 600px) and (orientation: landscape) {
+  #services header {
+    height: 90vh;
+  }
+  #services main {
+    height: 190vh;
+  }
+  #services footer {
+    height: 220vh;
   }
 }
 @media (min-width: 1000px) {
@@ -1519,6 +1658,7 @@
   }
   #index header nav > ul > li a {
     font-size: 27px;
+    color: #55B4B0;
   }
   #index header nav > ul > li a:hover {
     background-color: rgba(0, 0, 255, 0.146);
@@ -1618,6 +1758,7 @@
   }
   #services header nav > ul > li a {
     font-size: 27px;
+    color: #55B4B0;
   }
   #services header nav > ul > li a:hover {
     background-color: rgba(0, 0, 255, 0.146);
@@ -1688,6 +1829,7 @@
   }
   #aboutus header nav > ul > li a {
     font-size: 27px;
+    color: #55B4B0;
   }
   #aboutus header nav > ul > li a:hover {
     background-color: rgba(0, 0, 255, 0.146);
@@ -1750,6 +1892,7 @@
   }
   #contactform header nav > ul > li a {
     font-size: 27px;
+    color: #55B4B0;
   }
   #contactform header nav > ul > li a:hover {
     background-color: rgba(0, 0, 255, 0.146);
@@ -1803,6 +1946,7 @@
   }
   #ourgallery header nav > ul > li a {
     font-size: 27px;
+    color: #55B4B0;
   }
   #ourgallery header nav > ul > li a:hover {
     background-color: rgba(0, 0, 255, 0.146);

@@ -1,6 +1,6 @@
 // CONTACT TABLET VERSION
 
-@media (min-width: 600px){
+@media (orientation: portrait ),(min-width: 600px){
 
 #contactform {  
     header{
@@ -33,6 +33,15 @@
         }
           
         }
+@media (orientation:landscape){
+header {
+height: 90vh;
+}
+        
+footer {
+height: 220vh;
+}
+}
 
 }
 

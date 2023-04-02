@@ -1,6 +1,6 @@
 // SERVICES FILE TABLET
 
-@media(min-width:600px){
+@media (orientation: portrait ),(min-width:600px){
     #services{
        
 header{
@@ -24,6 +24,20 @@ main{
    
   }
  
+}
+
+@media (orientation: landscape) {
+  
+  header {
+    height: 90vh;
+  }
+
+  main {
+    height: 190vh;
+  }
+  footer{
+    height: 220vh;
+  }
 }
           
 }
