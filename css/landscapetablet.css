@@ -1,0 +1,20 @@
+@media only screen and (orientation: landscape) and (min-device-width: 600px) {
+  #index header {
+    height: 150vh;
+  }
+  #index .softwash {
+    height: 130vh;
+  }
+  #index .overlay {
+    height: 130vh;
+  }
+  #index .slideshow {
+    height: 200vh;
+  }
+  #index .services {
+    height: 170vh;
+  }
+  #index footer {
+    height: 220vh;
+  }
+}/*# sourceMappingURL=landscapetablet.css.map */

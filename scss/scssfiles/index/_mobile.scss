@@ -1,6 +1,6 @@
 // INDEX MOBILE FILE
 
-@media (orientation: portrait),(min-width: 200px) {
+@media only screen and (min-device-width: 200px) and (orientation:portrait){
 #index {
   header {
     background-image: url(/images/bgheader1.jpg);
@@ -113,7 +113,7 @@ details {
       @include displayFlex;
       justify-content: center;
       align-items: center;
-      height: 126vh;
+      height: 130vh;
       padding: 5vh 0vh 5vh 0vh;
       position: relative;
 
@@ -195,6 +195,7 @@ h1 {
 // SLIDESHOW SECTION
 
   .slideshow{
+ 
   background-color: whitesmoke;
   height: 110vh;
   @include displayFlex;
@@ -404,28 +405,7 @@ footer {
     
 }
 }
-@media (orientation:landscape){
 
-header {
-  height: 185vh;
-  row-gap: 33vh;
 }
 
-.about {
-  height: 180vh;
-}
- 
-.slideshow {
-  height: 168vh;
-}
-.services {
-  height: 165vh;
-}
-
-footer {
-    height: 220vh;
-  }
-} 
-  
-}
 }

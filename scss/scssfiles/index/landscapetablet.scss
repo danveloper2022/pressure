@@ -1,0 +1,27 @@
+
+@media only screen 
+and (orientation:landscape) 
+and (min-device-width:600px)
+// and (max-device-width:999px) { 
+  { 
+  #index {
+  header {
+    height: 150vh;
+  }
+  .softwash {
+    height: 130vh;
+  }
+  .overlay {
+    height: 130vh;
+  }
+  .slideshow {
+    height: 200vh;
+  }
+  .services {
+    height: 170vh;
+  }
+  footer{
+    height: 220vh;
+  }
+}
+}

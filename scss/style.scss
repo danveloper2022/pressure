@@ -1,6 +1,7 @@
 @import './normalize';
 @import './mixins';
 @import './scssfiles/index/mobile';
+@import './scssfiles/index/landscapemobile.scss';
 @import './scssfiles/aboutus/mobile';
 @import './scssfiles/gallery/mobile';
 @import './scssfiles/services/mobile';
@@ -8,6 +9,7 @@
 @import './scssfiles/aboutus/tablet';
 @import './scssfiles/contact/tablet';
 @import './scssfiles/index/tablet';
+@import './scssfiles/index/landscapetablet.scss';
 @import './scssfiles/gallery/tablet';
 @import './scssfiles/services/tablet';
 @import './scssfiles/index/desktop';

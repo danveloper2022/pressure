@@ -1,6 +1,9 @@
 // DESKTOP INDEX FILE
 
-@media (min-width: 1000px){
+@media only screen 
+and (orientation:portrait) 
+and (min-device-width:1000px)
+{
 #index{
 
 header{
@@ -26,6 +29,7 @@ header{
     }
     a:hover {
       background-color: rgba(0, 0, 255, 0.146);
+      color: white;
       padding: 5%;
       border-radius: 10px;
       transition: all .7s;

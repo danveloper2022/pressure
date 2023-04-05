@@ -1,0 +1,25 @@
+
+@media only screen and (orientation:landscape) and (min-device-width:200px){ 
+// and (max-device-width:599px) {
+    #index { 
+      header {
+        height: 185vh;
+        row-gap: 33vh;
+      }
+      
+      .about {
+        height: 180vh;
+      }
+       
+      .slideshow {
+        height: 168vh;
+      }
+      .services {
+        height: 165vh;
+      }
+      
+      footer {
+          height: 220vh;
+        }
+      } 
+    }

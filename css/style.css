@@ -9,7 +9,7 @@
   height: 3px;
 }
 
-@media (orientation: portrait), (min-width: 200px) {
+@media only screen and (min-device-width: 200px) and (orientation: portrait) {
   #index header {
     background-image: url(/images/bgheader1.jpg);
     background-position: center;
@@ -106,7 +106,7 @@
     row-gap: 3vh;
     justify-content: center;
     align-items: center;
-    height: 126vh;
+    height: 130vh;
     padding: 5vh 0vh 5vh 0vh;
     position: relative;
   }
@@ -244,12 +244,12 @@
     }
   }
 }
-@media only screen and (orientation: portrait) and (max-width: 300px), only screen and (min-width: 200px) and (max-width: 300px) {
+@media only screen and (min-device-width: 200px) and (orientation: portrait) and (max-width: 300px) {
   #index .slideshow .text {
     font-size: 11px;
   }
 }
-@media (orientation: portrait), (min-width: 200px) {
+@media only screen and (min-device-width: 200px) and (orientation: portrait) {
   #index .services {
     height: 133vh;
     background-image: url(/images/bglastpart.jpg);
@@ -289,7 +289,7 @@
     font-size: 20px;
   }
 }
-@media (orientation: portrait), (min-width: 200px) {
+@media only screen and (min-device-width: 200px) and (orientation: portrait) {
   #index footer {
     display: flex;
     flex-direction: column;
@@ -373,7 +373,7 @@
     color: rgba(255, 255, 255, 0.301);
   }
 }
-@media (orientation: portrait) and (orientation: landscape), (min-width: 200px) and (orientation: landscape) {
+@media only screen and (orientation: landscape) and (min-device-width: 200px) {
   #index header {
     height: 185vh;
     row-gap: 33vh;
@@ -1408,6 +1408,9 @@
   #contactform header nav > details > ul {
     width: 20%;
   }
+  #contactform main {
+    height: 130vh;
+  }
   #contactform footer {
     padding-top: 3vh;
     height: 135vh;
@@ -1434,7 +1437,7 @@
     height: 220vh;
   }
 }
-@media (orientation: portrait), (min-width: 600px) {
+@media only screen and (min-device-width: 600px) and (orientation: portrait) {
   #index header {
     height: 120vh;
     row-gap: 20vh;
@@ -1480,7 +1483,7 @@
          column-gap: 3vh;
   }
 }
-@media (orientation: portrait) and (orientation: landscape), (min-width: 600px) and (orientation: landscape) {
+@media only screen and (orientation: landscape) and (min-device-width: 600px) {
   #index header {
     height: 150vh;
   }
@@ -1639,7 +1642,7 @@
     height: 220vh;
   }
 }
-@media (min-width: 1000px) {
+@media only screen and (orientation: portrait) and (min-device-width: 1000px) {
   #index header {
     display: flex;
     height: 105vh;
@@ -1662,6 +1665,7 @@
   }
   #index header nav > ul > li a:hover {
     background-color: rgba(0, 0, 255, 0.146);
+    color: white;
     padding: 5%;
     border-radius: 10px;
     transition: all 0.7s;
@@ -1761,6 +1765,7 @@
     color: #55B4B0;
   }
   #services header nav > ul > li a:hover {
+    color: white;
     background-color: rgba(0, 0, 255, 0.146);
     padding: 5%;
     border-radius: 10px;
@@ -1833,6 +1838,7 @@
   }
   #aboutus header nav > ul > li a:hover {
     background-color: rgba(0, 0, 255, 0.146);
+    color: white;
     padding: 5%;
     border-radius: 10px;
     transition: all 0.7s;
@@ -1896,12 +1902,16 @@
   }
   #contactform header nav > ul > li a:hover {
     background-color: rgba(0, 0, 255, 0.146);
+    color: white;
     padding: 5%;
     border-radius: 10px;
     transition: all 0.7s;
   }
   #contactform details {
     display: none;
+  }
+  #contactform main {
+    height: 150vh;
   }
   #contactform footer {
     height: 60vh;
@@ -1950,6 +1960,7 @@
   }
   #ourgallery header nav > ul > li a:hover {
     background-color: rgba(0, 0, 255, 0.146);
+    color: white;
     padding: 5%;
     border-radius: 10px;
     transition: all 0.7s;
